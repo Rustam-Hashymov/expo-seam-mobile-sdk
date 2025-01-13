@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-seam-mobile-sdk": ["../src/index"],
+      "expo-seam-mobile-sdk/*": ["../src/*"]
+    }
+  }
+}
