@@ -1,0 +1,4 @@
+framework module LatchSDK {
+  header "LatchSDK-Swift.h"
+  requires objc
+}

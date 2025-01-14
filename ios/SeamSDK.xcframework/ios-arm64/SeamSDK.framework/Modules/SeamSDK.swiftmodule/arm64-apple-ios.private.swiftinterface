@@ -1,0 +1,450 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SeamSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Alamofire
+import ClaySDK
+import CocoaLumberjack
+import CoreBluetooth
+import Foundation
+import LatchSDK
+import LegicMobileSdk
+import SaltoJustINMobileSDK
+@_exported import SeamSDK
+import SeosMobileKeysSDK
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public enum SeamError : Swift.Error {
+  case decodingFailure(SeamSDK.SeamSDKError)
+  case missingProviderConfiguration(SeamSDK.SeamSDKError)
+  case noInternet(SeamSDK.SeamSDKError)
+  case bluetoothConnectionRequired(SeamSDK.SeamSDKError)
+  case internalError(SeamSDK.InternalSeamError)
+  case unknown(_: any Swift.Error)
+  public static func from(afError: Alamofire.AFError) -> SeamSDK.SeamError
+}
+public enum InternalSeamError : Swift.Error {
+  case phoneNativeProviderInitializationFailure(SeamSDK.SeamSDKError)
+  case phoneNativeSeosError(SeamSDK.SeamSDKError)
+  case phoneNativeLatchError(SeamSDK.SeamSDKError)
+  case phoneNativeSaltoError(SeamSDK.SeamSDKError)
+  case phoneNativeDormakabaError(SeamSDK.SeamSDKError)
+}
+@_hasMissingDesignatedInitializers public class NativeApi {
+  public var unlockWithTap: SeamSDK.UnlockWithTapApi {
+    get
+  }
+  public var credentials: SeamSDK.CredentialsApi {
+    get
+  }
+  public var internalSupportedProviders: Swift.Set<SeamSDK.IntegrationProvider>
+  public func initialize(enableUnlockWithTap: Swift.Bool) async -> SeamSDK.SeamResult<Swift.Void>
+  @objc deinit
+}
+public enum SeamEvent : Swift.Equatable {
+  case phone(SeamSDK.SeamEvent.Phone)
+  public enum Phone : Swift.Equatable {
+    case native(SeamSDK.SeamEvent.Phone.Native)
+    public enum Native : Swift.Equatable {
+      case readerConnected
+      case readerGrantedAccess
+      case readerConnectionFailed
+      case lostRequiredIosPermissions(permissions: [Swift.String])
+      case deactivationFailed
+      case bluetoothEnabled
+      case internetConnected
+      case internetDisconnected
+      case initialized
+      case unlockWithTap(SeamSDK.SeamEvent.Phone.Native.UnlockWithTap)
+      case credentials(SeamSDK.SeamEvent.Phone.Native.Credentials)
+      public enum UnlockWithTap : Swift.Equatable {
+        case launched
+        case launchFailed
+        case scanningStarted
+        case scanningStopped
+        case stopped
+        public func hash(into hasher: inout Swift.Hasher)
+        public static func == (a: SeamSDK.SeamEvent.Phone.Native.UnlockWithTap, b: SeamSDK.SeamEvent.Phone.Native.UnlockWithTap) -> Swift.Bool
+        public var hashValue: Swift.Int {
+          get
+        }
+      }
+      public enum Credentials : Swift.Equatable {
+        case refreshed(credentialIds: [Swift.String])
+        public static func == (a: SeamSDK.SeamEvent.Phone.Native.Credentials, b: SeamSDK.SeamEvent.Phone.Native.Credentials) -> Swift.Bool
+      }
+      public static func == (a: SeamSDK.SeamEvent.Phone.Native, b: SeamSDK.SeamEvent.Phone.Native) -> Swift.Bool
+    }
+    public static func == (a: SeamSDK.SeamEvent.Phone, b: SeamSDK.SeamEvent.Phone) -> Swift.Bool
+  }
+  public static func == (a: SeamSDK.SeamEvent, b: SeamSDK.SeamEvent) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class PhoneApi {
+  public var native: SeamSDK.NativeApi {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CredentialsApi {
+  public func list() -> [SeamSDK.SeamCredential]
+  @objc deinit
+}
+public struct Workspace : Swift.Codable {
+  public let workspaceId: Swift.String
+  public let name: Swift.String
+  public let isSandbox: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct HealthStatus : Swift.Decodable {
+  public let ok: Swift.Bool
+  public let msg: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserIdentity : Swift.Codable {
+  public let workspaceId: Swift.String
+  public let userIdentityId: Swift.String
+  public let userIdentityKey: Swift.String?
+  public let emailAddress: Swift.String?
+  public let fullName: Swift.String?
+  public let phoneNumber: Swift.String?
+  public let displayName: Swift.String
+  public let createdAt: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AssaAbloyCard : Swift.Codable {
+  public let id: Swift.String
+  public let created: Swift.String
+  public let expired: Swift.Bool
+  public let format: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LoadCredentialsResponse : Swift.Codable {
+  public let cards: [SeamSDK.AssaAbloyCard]
+  public init(_ cards: [SeamSDK.AssaAbloyCard])
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CredentialServiceEndpointDetails : Swift.Codable {
+  public let bleCapability: Swift.Bool?
+  public let hceCapability: Swift.Bool?
+  public let nfcCapability: Swift.Bool?
+  public let deviceManufacturer: Swift.String?
+  public let applicationVersion: Swift.String?
+  public let deviceModel: Swift.String?
+  public let seosAppletVersion: Swift.String?
+  public let osVersion: Swift.String?
+  public let seosTsmEndpointId: Swift.Int32?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum EndpointStatus : Swift.String, Swift.Decodable {
+  case pending
+  case invalid
+  case acknowledged
+  case activating
+  case activationFailure
+  case active
+  case terminated
+  case terminationFailure
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SeamEndpointResponse : Swift.Decodable {
+  public let endpointId: Swift.String
+  public let inviteCode: Swift.String
+  public let status: SeamSDK.EndpointStatus
+  public let details: SeamSDK.CredentialServiceEndpointDetails?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RedeemInviteCodeRequest : Swift.Encodable {
+  public let inviteCode: Swift.String
+  public let endpointDetails: SeamSDK.CredentialServiceEndpointDetails
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct RedeemInviteCodeResponse : Swift.Decodable {
+  public let endpoint: SeamSDK.SeamEndpointResponse
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum PhoneOS : Swift.String, Swift.Encodable {
+  case android
+  case ios
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum InvitationType : Swift.String, Swift.Decodable, Swift.Encodable {
+  case hid
+  case assaabloy
+  case latch
+  case dormakaba
+  case saltoKS
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol Endpoint : Swift.Decodable {
+  var endpointId: Swift.String { get }
+}
+public struct EndpointId : Swift.Decodable, SeamSDK.Endpoint {
+  public var endpointId: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct HIDCredentialManagerEndpoint : SeamSDK.Endpoint {
+  public var endpointType: Swift.String
+  public var endpointId: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AssaAbloyCredentialServiceEndpoint : SeamSDK.Endpoint {
+  public var endpointType: Swift.String
+  public var endpointId: Swift.String
+  public var isActive: Swift.Bool
+  public var seosTsmEndpointId: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum EndpointType : Swift.Decodable {
+  case hid(SeamSDK.HIDCredentialManagerEndpoint)
+  case assaAbloy(SeamSDK.AssaAbloyCredentialServiceEndpoint)
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ListEndpointsRequest : Swift.Encodable {
+  public let customSdkInstallationId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ListEndpointsResponse : Swift.Decodable {
+  public let endpoints: [SeamSDK.EndpointType]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PrepareEndpointRequest : Swift.Encodable {
+  public let endpointId: Swift.String
+  public let customSdkInstallationId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct PrepareEndpointResponse : Swift.Decodable {
+  public let endpoint: Swift.Optional<SeamSDK.EndpointId>
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FakeLoadCredentialsRequest : Swift.Encodable {
+  public let endpointId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Invitation : Swift.Decodable {
+  public let invitationType: SeamSDK.InvitationType
+  public let invitationId: Swift.String?
+  public let invitationCode: Swift.String?
+  public let extAssaAbloyCsEndpointId: Swift.String?
+  public let latchUserId: Swift.String?
+  public let latchPasswordlessAccessToken: Swift.String?
+  public let deviceId: Swift.String?
+  public let token: Swift.String?
+  public let legitConnectServiceUrl: Swift.String?
+  public let applicationUsername: Swift.String?
+  public let applicationPassword: Swift.String?
+  public let extAppId: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GetInvitationRequest : Swift.Encodable {
+  public let invitationId: Swift.String?
+  public let customSdkInstallationId: Swift.String
+  public let invitationType: SeamSDK.InvitationType
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct GetInvitationResponse : Swift.Decodable {
+  public let invitation: SeamSDK.Invitation
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CreateInvitationsRequest : Swift.Encodable {
+  public let customSdkInstallationId: Swift.String
+  public let phoneOs: SeamSDK.PhoneOS
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CreateInvitationsResponse : Swift.Decodable {
+  public let invitations: [SeamSDK.Invitation]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ListVisionlineLockServiceCodeResponseInner : Swift.Decodable {
+  public let lockServiceCodes: [Swift.String]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ListVisionlineLockServiceCodeResponse : Swift.Decodable {
+  public let listLockServiceCodesResponse: SeamSDK.ListVisionlineLockServiceCodeResponseInner
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SeosEndpoint : Swift.Codable {
+  public let seosId: Swift.String
+  public let server: Swift.String
+  public let mobileKeysApiVersion: Swift.String
+  public let appVersion: Swift.String
+  public let lastServerSyncDate: Swift.String?
+  public let isPersonalized: Swift.Bool
+  public let description: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SeosSdkMetadata : Swift.Codable {
+  public let lastTsmCommunicationTimestamp: Swift.String?
+  public let sdkVersion: Swift.String
+  public let lastErrorCode: Swift.Int?
+  public let lastReaderCommunication: Swift.String?
+  public let endpoint: SeamSDK.SeosEndpoint?
+  public let externalKeyIds: [Swift.String]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApiKey : Swift.Decodable {
+  public let apiKeyId: Swift.String
+  public let name: Swift.String
+  public let token: Swift.String
+  public let workspaceId: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Device : Swift.Decodable {
+  public let deviceId: Swift.String
+  public let isManaged: Swift.Bool
+  public let deviceType: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Empty : Swift.Codable {
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Phone : Swift.Codable {
+  public let phoneSdkUuid: Swift.String
+  public let assaAbloyCredentialServiceMetadata: SeamSDK.SeosSdkMetadata?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DeactivatePhoneRequest : Swift.Codable {
+  public let customSdkInstallationId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AssaAbloyWorkspaceSettings : Swift.Codable {
+  public let applicationId: Swift.String
+  public let applicationDescription: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ClientSession : Swift.Decodable {
+  public let workspaceId: Swift.String
+  public let connectedAccountIds: [Swift.String]
+  public let connectWebviewIds: [Swift.String]
+  public let clientSessionId: Swift.String
+  public let token: Swift.String
+  public let userIdentifierKey: Swift.String?
+  public let userIdentityIds: [Swift.String]
+  public let createdAt: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CreatedClientSession : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class WorkspacesApi {
+  public func get() async -> SeamSDK.SeamResponse<SeamSDK.Workspace>
+  @objc deinit
+}
+public enum SeamCredentialType : Swift.String, Swift.Codable {
+  case mobileKey
+  case appleWallet
+  case googleWallet
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SeamCredential {
+  public let type: SeamSDK.SeamCredentialType
+  public let name: Swift.String
+  public let providerId: Swift.String
+  public let cardNumber: Swift.String
+}
+public enum IntegrationProvider : Swift.String, Swift.CaseIterable {
+  case latch
+  case assa_abloy_credential_service
+  case salto_ks
+  case legic_connect
+  case salto_space
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SeamSDK.IntegrationProvider]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SeamSDK.IntegrationProvider] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SeamSDKError : Swift.Error {
+}
+@_hasMissingDesignatedInitializers public class ClientSessionsApi {
+  public func get() async -> SeamSDK.SeamResponse<SeamSDK.ClientSession>
+  public func create(userIdentifierKey: Swift.String? = nil, connectWebviewIds: [Swift.String]? = nil, connectedAccountIds: [Swift.String]? = nil, userIdentityIds: [Swift.String]? = nil, expiresAt: Swift.String? = nil) async -> SeamSDK.SeamResponse<SeamSDK.ClientSession>
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UnlockWithTapApi {
+  public func launch() async -> SeamSDK.SeamResult<Swift.Void>
+  public func stop() async -> SeamSDK.SeamResult<Swift.Void>
+  @objc deinit
+}
+public typealias EventHandler = (_ event: SeamSDK.SeamEvent) -> Swift.Void
+public typealias SeamResult<Response> = Swift.Result<Response, SeamSDK.SeamError>
+public class Seam {
+  public init(clientSessionToken: Swift.String? = nil, apiToken: Swift.String? = nil, basicAuth: Swift.String? = nil, baseUrl: Swift.String = "https://connect.getseam.com", userDefaults: Foundation.UserDefaults = .standard, eventHandler: SeamSDK.EventHandler? = nil)
+  public var workspaces: SeamSDK.WorkspacesApi {
+    get
+  }
+  public var clientSessions: SeamSDK.ClientSessionsApi {
+    get
+  }
+  public var userIdentities: SeamSDK.UserIdentitiesApi {
+    get
+  }
+  public var phone: SeamSDK.PhoneApi {
+    get
+  }
+  public func health() async -> SeamSDK.SeamResponse<SeamSDK.HealthStatus>
+  public func post<Body, Response>(path: Swift.String, body: Body = Empty(), printResponse: Swift.Bool = false) async -> SeamSDK.SeamResponse<Response> where Body : Swift.Encodable, Response : Swift.Decodable
+  public func get<Response>(path: Swift.String) async -> SeamSDK.SeamResponse<Response> where Response : Swift.Decodable
+  public func request<Body, Response>(path: Swift.String, body: Body? = nil, method: Alamofire.HTTPMethod? = nil, headers: Alamofire.HTTPHeaders? = nil, printResponse: Swift.Bool = false) async -> SeamSDK.SeamResponse<Response> where Body : Swift.Encodable, Response : Swift.Decodable
+  @objc deinit
+}
+public struct SeamResponse<Response> where Response : Swift.Decodable {
+}
+@_hasMissingDesignatedInitializers public class UserIdentitiesApi {
+  public func list() async -> SeamSDK.SeamResponse<[SeamSDK.UserIdentity]>
+  public func get(userIdentityId: Swift.String? = nil, userIdentityKey: Swift.String? = nil) async -> SeamSDK.SeamResponse<SeamSDK.UserIdentity>
+  public func create(userIdentityKey: Swift.String? = nil, emailAddress: Swift.String? = nil, phoneNumber: Swift.String? = nil, fullName: Swift.String? = nil) async -> SeamSDK.SeamResponse<SeamSDK.UserIdentity>
+  @objc deinit
+}
+extension SeamSDK.SeamEvent.Phone.Native.UnlockWithTap : Swift.Hashable {}
+extension SeamSDK.EndpointStatus : Swift.Equatable {}
+extension SeamSDK.EndpointStatus : Swift.Hashable {}
+extension SeamSDK.EndpointStatus : Swift.RawRepresentable {}
+extension SeamSDK.PhoneOS : Swift.Equatable {}
+extension SeamSDK.PhoneOS : Swift.Hashable {}
+extension SeamSDK.PhoneOS : Swift.RawRepresentable {}
+extension SeamSDK.InvitationType : Swift.Equatable {}
+extension SeamSDK.InvitationType : Swift.Hashable {}
+extension SeamSDK.InvitationType : Swift.RawRepresentable {}
+extension SeamSDK.SeamCredentialType : Swift.Equatable {}
+extension SeamSDK.SeamCredentialType : Swift.Hashable {}
+extension SeamSDK.SeamCredentialType : Swift.RawRepresentable {}
+extension SeamSDK.IntegrationProvider : Swift.Equatable {}
+extension SeamSDK.IntegrationProvider : Swift.Hashable {}
+extension SeamSDK.IntegrationProvider : Swift.RawRepresentable {}

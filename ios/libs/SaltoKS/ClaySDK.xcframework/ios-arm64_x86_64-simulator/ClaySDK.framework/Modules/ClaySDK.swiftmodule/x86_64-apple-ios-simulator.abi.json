@@ -1,0 +1,2240 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ClaySDK",
+    "printedName": "ClaySDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SaltoJustINMobileSDK",
+        "printedName": "SaltoJustINMobileSDK",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ClayResult",
+        "printedName": "ClayResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayResult.Type) -> ClaySDK.ClayResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayResult",
+                    "printedName": "ClaySDK.ClayResult",
+                    "usr": "c:@M@ClaySDK@E@ClayResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayResult",
+                        "printedName": "ClaySDK.ClayResult",
+                        "usr": "c:@M@ClaySDK@E@ClayResult"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayResult@ClayResultSuccess",
+            "mangledName": "$s7ClaySDK0A6ResultO7successyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayResult.Type) -> ClaySDK.ClayResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayResult",
+                    "printedName": "ClaySDK.ClayResult",
+                    "usr": "c:@M@ClaySDK@E@ClayResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayResult",
+                        "printedName": "ClaySDK.ClayResult",
+                        "usr": "c:@M@ClaySDK@E@ClayResult"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayResult@ClayResultFailure",
+            "mangledName": "$s7ClaySDK0A6ResultO7failureyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayResult.Type) -> ClaySDK.ClayResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayResult",
+                    "printedName": "ClaySDK.ClayResult",
+                    "usr": "c:@M@ClaySDK@E@ClayResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayResult",
+                        "printedName": "ClaySDK.ClayResult",
+                        "usr": "c:@M@ClaySDK@E@ClayResult"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayResult@ClayResultCancelled",
+            "mangledName": "$s7ClaySDK0A6ResultO9cancelledyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ClaySDK.ClayResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayResult",
+                    "printedName": "ClaySDK.ClayResult",
+                    "usr": "c:@M@ClaySDK@E@ClayResult"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7ClaySDK0A6ResultO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7ClaySDK0A6ResultO8rawValueACSgSi_tcfc",
+            "moduleName": "ClaySDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ClaySDK0A6ResultO8rawValueSivp",
+            "mangledName": "$s7ClaySDK0A6ResultO8rawValueSivp",
+            "moduleName": "ClaySDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ClaySDK0A6ResultO8rawValueSivg",
+                "mangledName": "$s7ClaySDK0A6ResultO8rawValueSivg",
+                "moduleName": "ClaySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@ClaySDK@E@ClayResult",
+        "mangledName": "$s7ClaySDK0A6ResultO",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SaltoJustINMobileSDK",
+        "printedName": "SaltoJustINMobileSDK",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ClayError",
+        "printedName": "ClayError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connectionGeneralError",
+            "printedName": "connectionGeneralError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorConnectionGeneralError",
+            "mangledName": "$s7ClaySDK0A5ErrorO017connectionGeneralC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "processAlreadyRunningError",
+            "printedName": "processAlreadyRunningError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorProcessAlreadyRunningError",
+            "mangledName": "$s7ClaySDK0A5ErrorO021processAlreadyRunningC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "incorrectDigitalKeyDataError",
+            "printedName": "incorrectDigitalKeyDataError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorIncorrectDigitalKeyDataError",
+            "mangledName": "$s7ClaySDK0A5ErrorO023incorrectDigitalKeyDataC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothNotSupportedError",
+            "printedName": "bluetoothNotSupportedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorBluetoothNotSupportedError",
+            "mangledName": "$s7ClaySDK0A5ErrorO021bluetoothNotSupportedC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothFeatureNotEnabledError",
+            "printedName": "bluetoothFeatureNotEnabledError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorBluetoothFeatureNotEnabledError",
+            "mangledName": "$s7ClaySDK0A5ErrorO026bluetoothFeatureNotEnabledC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothNotInitializedError",
+            "printedName": "bluetoothNotInitializedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorBluetoothNotInitializedError",
+            "mangledName": "$s7ClaySDK0A5ErrorO023bluetoothNotInitializedC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "disconnectedGattServerError",
+            "printedName": "disconnectedGattServerError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorDisconnectedGattServerError",
+            "mangledName": "$s7ClaySDK0A5ErrorO022disconnectedGattServerC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "operationCancelledError",
+            "printedName": "operationCancelledError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorOperationCancelledError",
+            "mangledName": "$s7ClaySDK0A5ErrorO018operationCancelledC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "noServicesFoundError",
+            "printedName": "noServicesFoundError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorNoServicesFoundError",
+            "mangledName": "$s7ClaySDK0A5ErrorO015noServicesFoundC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutReachedError",
+            "printedName": "timeoutReachedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorTimeoutReachedError",
+            "mangledName": "$s7ClaySDK0A5ErrorO014timeoutReachedC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "invalidServiceCharacteristicsError",
+            "printedName": "invalidServiceCharacteristicsError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorInvalidServiceCharacteristicsError",
+            "mangledName": "$s7ClaySDK0A5ErrorO029invalidServiceCharacteristicsC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "invalidProtocolVersionError",
+            "printedName": "invalidProtocolVersionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorInvalidProtocolVersionError",
+            "mangledName": "$s7ClaySDK0A5ErrorO022invalidProtocolVersionC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "invalidDataReceivedError",
+            "printedName": "invalidDataReceivedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorInvalidDataReceivedError",
+            "mangledName": "$s7ClaySDK0A5ErrorO019invalidDataReceivedC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationFailedError",
+            "printedName": "authenticationFailedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorAuthenticationFailedError",
+            "mangledName": "$s7ClaySDK0A5ErrorO020authenticationFailedC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothNotAuthorizedError",
+            "printedName": "bluetoothNotAuthorizedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorBluetoothNotAuthorizedError",
+            "mangledName": "$s7ClaySDK0A5ErrorO022bluetoothNotAuthorizedC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "internalError",
+            "printedName": "internalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorInternalError",
+            "mangledName": "$s7ClaySDK0A5ErrorO08internalC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
+            "name": "invalidApiPublicKey",
+            "printedName": "invalidApiPublicKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorInvalidApiPublicKey",
+            "mangledName": "$s7ClaySDK0A5ErrorO19invalidApiPublicKeyyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 16
+          },
+          {
+            "kind": "Var",
+            "name": "emptyApiPublicKey",
+            "printedName": "emptyApiPublicKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorEmptyApiPublicKey",
+            "mangledName": "$s7ClaySDK0A5ErrorO17emptyApiPublicKeyyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 17
+          },
+          {
+            "kind": "Var",
+            "name": "invalidBase64DigitalKey",
+            "printedName": "invalidBase64DigitalKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorInvalidBase64DigitalKey",
+            "mangledName": "$s7ClaySDK0A5ErrorO23invalidBase64DigitalKeyyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
+          },
+          {
+            "kind": "Var",
+            "name": "invalidDigitalKey",
+            "printedName": "invalidDigitalKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorInvalidDigitalKey",
+            "mangledName": "$s7ClaySDK0A5ErrorO17invalidDigitalKeyyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 19
+          },
+          {
+            "kind": "Var",
+            "name": "digitalKeyDecryptFailed",
+            "printedName": "digitalKeyDecryptFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorDigitalKeyDecryptFailed",
+            "mangledName": "$s7ClaySDK0A5ErrorO23digitalKeyDecryptFailedyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 20
+          },
+          {
+            "kind": "Var",
+            "name": "invalidDigitalKeySignature",
+            "printedName": "invalidDigitalKeySignature",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorInvalidDigitalKeySignature",
+            "mangledName": "$s7ClaySDK0A5ErrorO26invalidDigitalKeySignatureyA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 21
+          },
+          {
+            "kind": "Var",
+            "name": "storeError",
+            "printedName": "storeError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorStoreError",
+            "mangledName": "$s7ClaySDK0A5ErrorO05storeC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "storeLoadError",
+            "printedName": "storeLoadError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClaySDK.ClayError.Type) -> ClaySDK.ClayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClaySDK.ClayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClayError",
+                        "printedName": "ClaySDK.ClayError",
+                        "usr": "c:@M@ClaySDK@E@ClayError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ClaySDK@E@ClayError@ClayErrorStoreLoadError",
+            "mangledName": "$s7ClaySDK0A5ErrorO09storeLoadC0yA2CmF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ClaySDK.ClayError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClayError",
+                    "printedName": "ClaySDK.ClayError",
+                    "usr": "c:@M@ClaySDK@E@ClayError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7ClaySDK0A5ErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7ClaySDK0A5ErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "ClaySDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ClaySDK0A5ErrorO8rawValueSivp",
+            "mangledName": "$s7ClaySDK0A5ErrorO8rawValueSivp",
+            "moduleName": "ClaySDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ClaySDK0A5ErrorO8rawValueSivg",
+                "mangledName": "$s7ClaySDK0A5ErrorO8rawValueSivg",
+                "moduleName": "ClaySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_nsErrorDomain",
+            "printedName": "_nsErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ClaySDK0A5ErrorO03_nsC6DomainSSvpZ",
+            "mangledName": "$s7ClaySDK0A5ErrorO03_nsC6DomainSSvpZ",
+            "moduleName": "ClaySDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ClaySDK0A5ErrorO03_nsC6DomainSSvgZ",
+                "mangledName": "$s7ClaySDK0A5ErrorO03_nsC6DomainSSvgZ",
+                "moduleName": "ClaySDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ClaySDK0A5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s7ClaySDK0A5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ClaySDK0A5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s7ClaySDK0A5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "ClaySDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@ClaySDK@E@ClayError",
+        "mangledName": "$s7ClaySDK0A5ErrorO",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_BridgedNSError",
+            "printedName": "_BridgedNSError",
+            "usr": "s:10Foundation15_BridgedNSErrorP",
+            "mangledName": "$s10Foundation15_BridgedNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeableError",
+            "printedName": "_ObjectiveCBridgeableError",
+            "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
+            "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VirgilCrypto",
+        "printedName": "VirgilCrypto",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SaltoJustINMobileSDK",
+        "printedName": "SaltoJustINMobileSDK",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Clay",
+        "printedName": "Clay",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(installationUID:apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Clay",
+                "printedName": "ClaySDK.Clay",
+                "usr": "c:@M@ClaySDK@objc(cs)Clay"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ClaySDK@objc(cs)Clay(im)initWithInstallationUID:apiKey:error:",
+            "mangledName": "$s7ClaySDK0A0C15installationUID6apiKeyACSS_SStKcfc",
+            "moduleName": "ClaySDK",
+            "objc_name": "initWithInstallationUID:apiKey:error:",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "getPublicKey",
+            "printedName": "getPublicKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ClaySDK@objc(cs)Clay(im)getPublicKey",
+            "mangledName": "$s7ClaySDK0A0C12getPublicKeySSyF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reloadKeys",
+            "printedName": "reloadKeys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ClaySDK@objc(cs)Clay(im)reloadKeys",
+            "mangledName": "$s7ClaySDK0A0C10reloadKeysSbyF",
+            "moduleName": "ClaySDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendDigitalKey",
+            "printedName": "sendDigitalKey(with:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DigitalKeyDelegate",
+                "printedName": "any ClaySDK.DigitalKeyDelegate",
+                "usr": "c:@M@ClaySDK@objc(pl)DigitalKeyDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ClaySDK@objc(cs)Clay(im)sendDigitalKeyWith:delegate:error:",
+            "mangledName": "$s7ClaySDK0A0C14sendDigitalKey4with8delegateySS_AA0dE8Delegate_ptKF",
+            "moduleName": "ClaySDK",
+            "objc_name": "sendDigitalKeyWith:delegate:error:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Clay",
+                "printedName": "ClaySDK.Clay",
+                "usr": "c:@M@ClaySDK@objc(cs)Clay"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ClaySDK@objc(cs)Clay(im)init",
+            "mangledName": "$s7ClaySDK0A0CACycfc",
+            "moduleName": "ClaySDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ClaySDK@objc(cs)Clay",
+        "mangledName": "$s7ClaySDK0A0C",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClaySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DigitalKeyDelegate",
+        "printedName": "DigitalKeyDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onLockFound",
+            "printedName": "onLockFound()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ClaySDK@objc(pl)DigitalKeyDelegate(im)onLockFound",
+            "mangledName": "$s7ClaySDK18DigitalKeyDelegateP11onLockFoundyyF",
+            "moduleName": "ClaySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ClaySDK.DigitalKeyDelegate>",
+            "sugared_genericSig": "<Self where Self : ClaySDK.DigitalKeyDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSuccess",
+            "printedName": "onSuccess(_:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClayResult",
+                "printedName": "ClaySDK.ClayResult",
+                "usr": "c:@M@ClaySDK@E@ClayResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ClaySDK@objc(pl)DigitalKeyDelegate(im)onSuccess:message:",
+            "mangledName": "$s7ClaySDK18DigitalKeyDelegateP9onSuccess_7messageyAA0A6ResultO_SSSgtF",
+            "moduleName": "ClaySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ClaySDK.DigitalKeyDelegate>",
+            "sugared_genericSig": "<Self where Self : ClaySDK.DigitalKeyDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFailure",
+            "printedName": "onFailure(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClayError",
+                "printedName": "ClaySDK.ClayError",
+                "usr": "c:@M@ClaySDK@E@ClayError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ClaySDK@objc(pl)DigitalKeyDelegate(im)onFailure:",
+            "mangledName": "$s7ClaySDK18DigitalKeyDelegateP9onFailureyyAA0A5ErrorOF",
+            "moduleName": "ClaySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ClaySDK.DigitalKeyDelegate>",
+            "sugared_genericSig": "<Self where Self : ClaySDK.DigitalKeyDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@ClaySDK@objc(pl)DigitalKeyDelegate",
+        "mangledName": "$s7ClaySDK18DigitalKeyDelegateP",
+        "moduleName": "ClaySDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 714,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 723,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 603,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 757,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 873,
+      "length": 3,
+      "value": "402"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 966,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1056,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1147,
+      "length": 3,
+      "value": "405"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1253,
+      "length": 3,
+      "value": "406"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1335,
+      "length": 3,
+      "value": "407"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1430,
+      "length": 3,
+      "value": "409"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1500,
+      "length": 3,
+      "value": "410"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1605,
+      "length": 3,
+      "value": "411"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1751,
+      "length": 3,
+      "value": "412"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1854,
+      "length": 3,
+      "value": "413"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1982,
+      "length": 3,
+      "value": "414"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2092,
+      "length": 3,
+      "value": "415"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2251,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2350,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2446,
+      "length": 4,
+      "value": "1001"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2571,
+      "length": 4,
+      "value": "1005"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2670,
+      "length": 4,
+      "value": "1006"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2851,
+      "length": 4,
+      "value": "1007"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2968,
+      "length": 4,
+      "value": "1009"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3073,
+      "length": 4,
+      "value": "1010"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3190,
+      "length": 4,
+      "value": "1011"
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/Clay.swift",
+      "kind": "StringLiteral",
+      "offset": 563,
+      "length": 23,
+      "value": "\"VIRGIL-DATA-SIGNATURE\""
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayKeychain.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 12,
+      "value": "\"privateKey\""
+    },
+    {
+      "filePath": "\/Users\/jakovvidekovic\/Documents\/projects-git\/claysdk.ios\/ClaySDK\/ClayKeychain.swift",
+      "kind": "StringLiteral",
+      "offset": 280,
+      "length": 8,
+      "value": "\"apiKey\""
+    }
+  ]
+}

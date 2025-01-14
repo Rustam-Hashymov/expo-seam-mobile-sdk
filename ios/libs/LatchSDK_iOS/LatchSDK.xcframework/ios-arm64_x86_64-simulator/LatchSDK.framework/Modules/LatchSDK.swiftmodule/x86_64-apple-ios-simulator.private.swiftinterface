@@ -1,0 +1,181 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LatchSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import CoreData
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public struct UnlockStatus {
+  public enum Status {
+    case unlocking
+    case unlocked
+    case failure(LatchSDK.UnlockError)
+  }
+  public let lockID: Swift.String
+  public let status: LatchSDK.UnlockStatus.Status
+}
+public struct Guest {
+  public struct Access {
+    public let deviceUUID: Foundation.UUID
+    public let passcodeType: LatchSDK.PasscodeType
+    public let startTime: Foundation.Date
+    public let endTime: Foundation.Date?
+  }
+  public let uuid: Foundation.UUID
+  public let firstName: Swift.String
+  public let lastName: Swift.String?
+  public let email: Swift.String?
+  public let phone: Swift.String?
+  public let accesses: [LatchSDK.Guest.Access]
+}
+public enum PasscodeType {
+  case daily
+  case dailySingleUse
+  case permanent
+  public static func == (a: LatchSDK.PasscodeType, b: LatchSDK.PasscodeType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum InviteGuestError : Swift.String, Swift.Error {
+  case emailRequired
+  case emailOrPhoneRequired
+  case emailAndPhoneProvided
+  case invalidPhone
+  case invalidStartTime
+  case endTimeNotSupported
+  case userCanNotShare
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension LatchSDK.InviteGuestError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Latch {
+  public var proximityUnlockHandler: ((LatchSDK.UnlockStatus) -> Swift.Void)?
+  @objc deinit
+}
+extension LatchSDK.Latch {
+  public static func initialize(withToken token: Swift.String? = nil, completion: @escaping (Swift.Result<LatchSDK.Latch, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func initialize(withToken token: Swift.String? = nil) async throws -> LatchSDK.Latch
+  #endif
+}
+public protocol Lock {
+  var id: Foundation.UUID { get }
+  var name: Swift.String { get }
+  var deviceType: LatchSDK.DeviceType { get }
+  var accessStartDate: Foundation.Date { get }
+  var accessEndDate: Foundation.Date? { get }
+}
+public enum DeviceType : Swift.String {
+  case c
+  case g
+  case m
+  case r
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension LatchSDK.Latch {
+  public func locks(completion: @escaping ([any LatchSDK.Lock]) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func locks() async -> [any LatchSDK.Lock]
+  #endif
+}
+extension LatchSDK.Latch {
+  public func unlock(lockID: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func unlock(lockID: Swift.String) async throws
+  #endif
+  @available(*, deprecated, message: "Replaced by unlock(lockID:completion:)")
+  public func unlock(_ lock: any LatchSDK.Lock, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "Replaced by unlock(lockID:)")
+  public func unlock(_ lock: any LatchSDK.Lock) async throws
+  #endif
+}
+extension LatchSDK.Latch {
+  public func startProximityUnlock()
+  public func stopProximityUnlock()
+}
+extension LatchSDK.Latch {
+  public func sync(lockID: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func sync(lockID: Swift.String) async throws
+  #endif
+}
+extension LatchSDK.Latch {
+  public func inviteGuests(firstName: Swift.String, lastName: Swift.String? = nil, email: Swift.String, phone: Swift.String? = nil, startTime: Foundation.Date, endTime: Foundation.Date? = nil, deviceUUIDs: [Swift.String], passcodeType: LatchSDK.PasscodeType, completion: @escaping (Swift.Result<LatchSDK.Guest, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func inviteGuests(firstName: Swift.String, lastName: Swift.String? = nil, email: Swift.String, phone: Swift.String? = nil, startTime: Foundation.Date, endTime: Foundation.Date? = nil, deviceUUIDs: [Swift.String], passcodeType: LatchSDK.PasscodeType) async throws -> LatchSDK.Guest
+  #endif
+  public func guests(completion: @escaping (Swift.Result<[LatchSDK.Guest], any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func guests() async throws -> [LatchSDK.Guest]
+  #endif
+}
+public enum UnlockError : Swift.Error {
+  case bluetoothDisabled
+  case bluetoothPermissionDenied
+  case concurrentUnlockInProgress
+  case lockNotFound(Swift.String)
+  case outOfSchedule
+  case timeout
+  case internalError
+}
+extension LatchSDK.UnlockError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public enum ConsentError : Swift.Error {
+  case userConsentDenied
+  public static func == (a: LatchSDK.ConsentError, b: LatchSDK.ConsentError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension LatchSDK.ConsentError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public enum NetworkError : Swift.Error, Swift.Equatable {
+  case invalidToken
+  case internalError
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: LatchSDK.NetworkError, b: LatchSDK.NetworkError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension LatchSDK.NetworkError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension LatchSDK.PasscodeType : Swift.Equatable {}
+extension LatchSDK.PasscodeType : Swift.Hashable {}
+extension LatchSDK.InviteGuestError : Swift.Equatable {}
+extension LatchSDK.InviteGuestError : Swift.Hashable {}
+extension LatchSDK.InviteGuestError : Swift.RawRepresentable {}
+extension LatchSDK.DeviceType : Swift.Equatable {}
+extension LatchSDK.DeviceType : Swift.Hashable {}
+extension LatchSDK.DeviceType : Swift.RawRepresentable {}
+extension LatchSDK.ConsentError : Swift.Equatable {}
+extension LatchSDK.ConsentError : Swift.Hashable {}
+extension LatchSDK.NetworkError : Swift.Hashable {}

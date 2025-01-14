@@ -1,0 +1,74 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ClaySDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum ClayResult : Swift.Int {
+  case success, failure, cancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ClayError : Swift.Int, Swift.Error {
+  case connectionGeneralError = 400
+  case processAlreadyRunningError = 401
+  case incorrectDigitalKeyDataError = 402
+  case bluetoothNotSupportedError = 403
+  case bluetoothFeatureNotEnabledError = 404
+  case bluetoothNotInitializedError = 405
+  case disconnectedGattServerError = 406
+  case operationCancelledError = 407
+  case noServicesFoundError = 409
+  case timeoutReachedError = 410
+  case invalidServiceCharacteristicsError = 411
+  case invalidProtocolVersionError = 412
+  case invalidDataReceivedError = 413
+  case authenticationFailedError = 414
+  case bluetoothNotAuthorizedError = 415
+  case internalError = 999
+  case invalidApiPublicKey = 1000
+  case emptyApiPublicKey = 1001
+  case invalidBase64DigitalKey = 1005
+  case invalidDigitalKey = 1006
+  case digitalKeyDecryptFailed = 1007
+  case invalidDigitalKeySignature = 1009
+  case storeError = 1010
+  case storeLoadError = 1011
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension ClaySDK.ClayError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class Clay : ObjectiveC.NSObject {
+  @objc convenience public init(installationUID: Swift.String, apiKey: Swift.String) throws
+  @objc public func getPublicKey() -> Swift.String
+  @objc public func reloadKeys() -> Swift.Bool
+  @objc public func sendDigitalKey(with key: Swift.String, delegate: any ClaySDK.DigitalKeyDelegate) throws
+  @objc deinit
+}
+@objc public protocol DigitalKeyDelegate {
+  @objc func onLockFound()
+  @objc func onSuccess(_ result: ClaySDK.ClayResult, message: Swift.String?)
+  @objc func onFailure(_ error: ClaySDK.ClayError)
+}
+extension ClaySDK.ClayResult : Swift.Equatable {}
+extension ClaySDK.ClayResult : Swift.Hashable {}
+extension ClaySDK.ClayResult : Swift.RawRepresentable {}
+extension ClaySDK.ClayError : Swift.Equatable {}
+extension ClaySDK.ClayError : Swift.Hashable {}
+extension ClaySDK.ClayError : Swift.RawRepresentable {}

@@ -1,0 +1,4 @@
+framework module ClaySDK {
+  header "ClaySDK-Swift.h"
+  requires objc
+}

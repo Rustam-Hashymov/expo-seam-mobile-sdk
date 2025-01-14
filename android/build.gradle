@@ -41,3 +41,12 @@ android {
     abortOnError false
   }
 }
+
+dependencies {
+    implementation("io.ktor:ktor-client-cio:2.3.2")
+    implementation("io.ktor:ktor-client-logging:2.3.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+
+    debugImplementation fileTree(dir: '../android', include: ['seam-phone-sdk-android-debug.aar'])
+    releaseImplementation fileTree(dir: '../android', include: ['seam-phone-sdk-android-release.aar'])
+}

@@ -1,0 +1,5279 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "UnlockStatus",
+        "printedName": "UnlockStatus",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Status",
+            "printedName": "Status",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "unlocking",
+                "printedName": "unlocking",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LatchSDK.UnlockStatus.Status.Type) -> LatchSDK.UnlockStatus.Status",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "LatchSDK.UnlockStatus.Status",
+                        "usr": "s:8LatchSDK12UnlockStatusV0D0O"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LatchSDK.UnlockStatus.Status.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Status",
+                            "printedName": "LatchSDK.UnlockStatus.Status",
+                            "usr": "s:8LatchSDK12UnlockStatusV0D0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8LatchSDK12UnlockStatusV0D0O9unlockingyA2EmF",
+                "mangledName": "$s8LatchSDK12UnlockStatusV0D0O9unlockingyA2EmF",
+                "moduleName": "LatchSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unlocked",
+                "printedName": "unlocked",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LatchSDK.UnlockStatus.Status.Type) -> LatchSDK.UnlockStatus.Status",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "LatchSDK.UnlockStatus.Status",
+                        "usr": "s:8LatchSDK12UnlockStatusV0D0O"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LatchSDK.UnlockStatus.Status.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Status",
+                            "printedName": "LatchSDK.UnlockStatus.Status",
+                            "usr": "s:8LatchSDK12UnlockStatusV0D0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8LatchSDK12UnlockStatusV0D0O8unlockedyA2EmF",
+                "mangledName": "$s8LatchSDK12UnlockStatusV0D0O8unlockedyA2EmF",
+                "moduleName": "LatchSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "failure",
+                "printedName": "failure",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LatchSDK.UnlockStatus.Status.Type) -> (LatchSDK.UnlockError) -> LatchSDK.UnlockStatus.Status",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(LatchSDK.UnlockError) -> LatchSDK.UnlockStatus.Status",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Status",
+                            "printedName": "LatchSDK.UnlockStatus.Status",
+                            "usr": "s:8LatchSDK12UnlockStatusV0D0O"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnlockError",
+                            "printedName": "LatchSDK.UnlockError",
+                            "usr": "s:8LatchSDK11UnlockErrorO"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LatchSDK.UnlockStatus.Status.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Status",
+                            "printedName": "LatchSDK.UnlockStatus.Status",
+                            "usr": "s:8LatchSDK12UnlockStatusV0D0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8LatchSDK12UnlockStatusV0D0O7failureyAeA0C5ErrorOcAEmF",
+                "mangledName": "$s8LatchSDK12UnlockStatusV0D0O7failureyAeA0C5ErrorOcAEmF",
+                "moduleName": "LatchSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:8LatchSDK12UnlockStatusV0D0O",
+            "mangledName": "$s8LatchSDK12UnlockStatusV0D0O",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lockID",
+            "printedName": "lockID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK12UnlockStatusV6lockIDSSvp",
+            "mangledName": "$s8LatchSDK12UnlockStatusV6lockIDSSvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK12UnlockStatusV6lockIDSSvg",
+                "mangledName": "$s8LatchSDK12UnlockStatusV6lockIDSSvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Status",
+                "printedName": "LatchSDK.UnlockStatus.Status",
+                "usr": "s:8LatchSDK12UnlockStatusV0D0O"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK12UnlockStatusV6statusAC0D0Ovp",
+            "mangledName": "$s8LatchSDK12UnlockStatusV6statusAC0D0Ovp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "LatchSDK.UnlockStatus.Status",
+                    "usr": "s:8LatchSDK12UnlockStatusV0D0O"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK12UnlockStatusV6statusAC0D0Ovg",
+                "mangledName": "$s8LatchSDK12UnlockStatusV6statusAC0D0Ovg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8LatchSDK12UnlockStatusV",
+        "mangledName": "$s8LatchSDK12UnlockStatusV",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Guest",
+        "printedName": "Guest",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Access",
+            "printedName": "Access",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "deviceUUID",
+                "printedName": "deviceUUID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8LatchSDK5GuestV6AccessV10deviceUUID10Foundation0F0Vvp",
+                "mangledName": "$s8LatchSDK5GuestV6AccessV10deviceUUID10Foundation0F0Vvp",
+                "moduleName": "LatchSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UUID",
+                        "printedName": "Foundation.UUID",
+                        "usr": "s:10Foundation4UUIDV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8LatchSDK5GuestV6AccessV10deviceUUID10Foundation0F0Vvg",
+                    "mangledName": "$s8LatchSDK5GuestV6AccessV10deviceUUID10Foundation0F0Vvg",
+                    "moduleName": "LatchSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "passcodeType",
+                "printedName": "passcodeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PasscodeType",
+                    "printedName": "LatchSDK.PasscodeType",
+                    "usr": "s:8LatchSDK12PasscodeTypeO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8LatchSDK5GuestV6AccessV12passcodeTypeAA08PasscodeF0Ovp",
+                "mangledName": "$s8LatchSDK5GuestV6AccessV12passcodeTypeAA08PasscodeF0Ovp",
+                "moduleName": "LatchSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PasscodeType",
+                        "printedName": "LatchSDK.PasscodeType",
+                        "usr": "s:8LatchSDK12PasscodeTypeO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8LatchSDK5GuestV6AccessV12passcodeTypeAA08PasscodeF0Ovg",
+                    "mangledName": "$s8LatchSDK5GuestV6AccessV12passcodeTypeAA08PasscodeF0Ovg",
+                    "moduleName": "LatchSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "startTime",
+                "printedName": "startTime",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8LatchSDK5GuestV6AccessV9startTime10Foundation4DateVvp",
+                "mangledName": "$s8LatchSDK5GuestV6AccessV9startTime10Foundation4DateVvp",
+                "moduleName": "LatchSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8LatchSDK5GuestV6AccessV9startTime10Foundation4DateVvg",
+                    "mangledName": "$s8LatchSDK5GuestV6AccessV9startTime10Foundation4DateVvg",
+                    "moduleName": "LatchSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "endTime",
+                "printedName": "endTime",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8LatchSDK5GuestV6AccessV7endTime10Foundation4DateVSgvp",
+                "mangledName": "$s8LatchSDK5GuestV6AccessV7endTime10Foundation4DateVSgvp",
+                "moduleName": "LatchSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Date?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Date",
+                            "printedName": "Foundation.Date",
+                            "usr": "s:10Foundation4DateV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8LatchSDK5GuestV6AccessV7endTime10Foundation4DateVSgvg",
+                    "mangledName": "$s8LatchSDK5GuestV6AccessV7endTime10Foundation4DateVSgvg",
+                    "moduleName": "LatchSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:8LatchSDK5GuestV6AccessV",
+            "mangledName": "$s8LatchSDK5GuestV6AccessV",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK5GuestV4uuid10Foundation4UUIDVvp",
+            "mangledName": "$s8LatchSDK5GuestV4uuid10Foundation4UUIDVvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK5GuestV4uuid10Foundation4UUIDVvg",
+                "mangledName": "$s8LatchSDK5GuestV4uuid10Foundation4UUIDVvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "firstName",
+            "printedName": "firstName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK5GuestV9firstNameSSvp",
+            "mangledName": "$s8LatchSDK5GuestV9firstNameSSvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK5GuestV9firstNameSSvg",
+                "mangledName": "$s8LatchSDK5GuestV9firstNameSSvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastName",
+            "printedName": "lastName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK5GuestV8lastNameSSSgvp",
+            "mangledName": "$s8LatchSDK5GuestV8lastNameSSSgvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK5GuestV8lastNameSSSgvg",
+                "mangledName": "$s8LatchSDK5GuestV8lastNameSSSgvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK5GuestV5emailSSSgvp",
+            "mangledName": "$s8LatchSDK5GuestV5emailSSSgvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK5GuestV5emailSSSgvg",
+                "mangledName": "$s8LatchSDK5GuestV5emailSSSgvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "phone",
+            "printedName": "phone",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK5GuestV5phoneSSSgvp",
+            "mangledName": "$s8LatchSDK5GuestV5phoneSSSgvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK5GuestV5phoneSSSgvg",
+                "mangledName": "$s8LatchSDK5GuestV5phoneSSSgvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accesses",
+            "printedName": "accesses",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[LatchSDK.Guest.Access]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Access",
+                    "printedName": "LatchSDK.Guest.Access",
+                    "usr": "s:8LatchSDK5GuestV6AccessV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK5GuestV8accessesSayAC6AccessVGvp",
+            "mangledName": "$s8LatchSDK5GuestV8accessesSayAC6AccessVGvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LatchSDK.Guest.Access]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Access",
+                        "printedName": "LatchSDK.Guest.Access",
+                        "usr": "s:8LatchSDK5GuestV6AccessV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK5GuestV8accessesSayAC6AccessVGvg",
+                "mangledName": "$s8LatchSDK5GuestV8accessesSayAC6AccessVGvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8LatchSDK5GuestV",
+        "mangledName": "$s8LatchSDK5GuestV",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PasscodeType",
+        "printedName": "PasscodeType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "daily",
+            "printedName": "daily",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.PasscodeType.Type) -> LatchSDK.PasscodeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PasscodeType",
+                    "printedName": "LatchSDK.PasscodeType",
+                    "usr": "s:8LatchSDK12PasscodeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.PasscodeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PasscodeType",
+                        "printedName": "LatchSDK.PasscodeType",
+                        "usr": "s:8LatchSDK12PasscodeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK12PasscodeTypeO5dailyyA2CmF",
+            "mangledName": "$s8LatchSDK12PasscodeTypeO5dailyyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dailySingleUse",
+            "printedName": "dailySingleUse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.PasscodeType.Type) -> LatchSDK.PasscodeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PasscodeType",
+                    "printedName": "LatchSDK.PasscodeType",
+                    "usr": "s:8LatchSDK12PasscodeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.PasscodeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PasscodeType",
+                        "printedName": "LatchSDK.PasscodeType",
+                        "usr": "s:8LatchSDK12PasscodeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK12PasscodeTypeO14dailySingleUseyA2CmF",
+            "mangledName": "$s8LatchSDK12PasscodeTypeO14dailySingleUseyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "permanent",
+            "printedName": "permanent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.PasscodeType.Type) -> LatchSDK.PasscodeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PasscodeType",
+                    "printedName": "LatchSDK.PasscodeType",
+                    "usr": "s:8LatchSDK12PasscodeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.PasscodeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PasscodeType",
+                        "printedName": "LatchSDK.PasscodeType",
+                        "usr": "s:8LatchSDK12PasscodeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK12PasscodeTypeO9permanentyA2CmF",
+            "mangledName": "$s8LatchSDK12PasscodeTypeO9permanentyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PasscodeType",
+                "printedName": "LatchSDK.PasscodeType",
+                "usr": "s:8LatchSDK12PasscodeTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PasscodeType",
+                "printedName": "LatchSDK.PasscodeType",
+                "usr": "s:8LatchSDK12PasscodeTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK12PasscodeTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8LatchSDK12PasscodeTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "LatchSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK12PasscodeTypeO9hashValueSivp",
+            "mangledName": "$s8LatchSDK12PasscodeTypeO9hashValueSivp",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK12PasscodeTypeO9hashValueSivg",
+                "mangledName": "$s8LatchSDK12PasscodeTypeO9hashValueSivg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK12PasscodeTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8LatchSDK12PasscodeTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8LatchSDK12PasscodeTypeO",
+        "mangledName": "$s8LatchSDK12PasscodeTypeO",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InviteGuestError",
+        "printedName": "InviteGuestError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "emailRequired",
+            "printedName": "emailRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.InviteGuestError.Type) -> LatchSDK.InviteGuestError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InviteGuestError",
+                    "printedName": "LatchSDK.InviteGuestError",
+                    "usr": "s:8LatchSDK16InviteGuestErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.InviteGuestError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InviteGuestError",
+                        "printedName": "LatchSDK.InviteGuestError",
+                        "usr": "s:8LatchSDK16InviteGuestErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK16InviteGuestErrorO13emailRequiredyA2CmF",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO13emailRequiredyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailOrPhoneRequired",
+            "printedName": "emailOrPhoneRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.InviteGuestError.Type) -> LatchSDK.InviteGuestError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InviteGuestError",
+                    "printedName": "LatchSDK.InviteGuestError",
+                    "usr": "s:8LatchSDK16InviteGuestErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.InviteGuestError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InviteGuestError",
+                        "printedName": "LatchSDK.InviteGuestError",
+                        "usr": "s:8LatchSDK16InviteGuestErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK16InviteGuestErrorO20emailOrPhoneRequiredyA2CmF",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO20emailOrPhoneRequiredyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailAndPhoneProvided",
+            "printedName": "emailAndPhoneProvided",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.InviteGuestError.Type) -> LatchSDK.InviteGuestError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InviteGuestError",
+                    "printedName": "LatchSDK.InviteGuestError",
+                    "usr": "s:8LatchSDK16InviteGuestErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.InviteGuestError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InviteGuestError",
+                        "printedName": "LatchSDK.InviteGuestError",
+                        "usr": "s:8LatchSDK16InviteGuestErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK16InviteGuestErrorO21emailAndPhoneProvidedyA2CmF",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO21emailAndPhoneProvidedyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidPhone",
+            "printedName": "invalidPhone",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.InviteGuestError.Type) -> LatchSDK.InviteGuestError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InviteGuestError",
+                    "printedName": "LatchSDK.InviteGuestError",
+                    "usr": "s:8LatchSDK16InviteGuestErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.InviteGuestError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InviteGuestError",
+                        "printedName": "LatchSDK.InviteGuestError",
+                        "usr": "s:8LatchSDK16InviteGuestErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK16InviteGuestErrorO12invalidPhoneyA2CmF",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO12invalidPhoneyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidStartTime",
+            "printedName": "invalidStartTime",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.InviteGuestError.Type) -> LatchSDK.InviteGuestError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InviteGuestError",
+                    "printedName": "LatchSDK.InviteGuestError",
+                    "usr": "s:8LatchSDK16InviteGuestErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.InviteGuestError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InviteGuestError",
+                        "printedName": "LatchSDK.InviteGuestError",
+                        "usr": "s:8LatchSDK16InviteGuestErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK16InviteGuestErrorO16invalidStartTimeyA2CmF",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO16invalidStartTimeyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endTimeNotSupported",
+            "printedName": "endTimeNotSupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.InviteGuestError.Type) -> LatchSDK.InviteGuestError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InviteGuestError",
+                    "printedName": "LatchSDK.InviteGuestError",
+                    "usr": "s:8LatchSDK16InviteGuestErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.InviteGuestError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InviteGuestError",
+                        "printedName": "LatchSDK.InviteGuestError",
+                        "usr": "s:8LatchSDK16InviteGuestErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK16InviteGuestErrorO19endTimeNotSupportedyA2CmF",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO19endTimeNotSupportedyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userCanNotShare",
+            "printedName": "userCanNotShare",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.InviteGuestError.Type) -> LatchSDK.InviteGuestError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InviteGuestError",
+                    "printedName": "LatchSDK.InviteGuestError",
+                    "usr": "s:8LatchSDK16InviteGuestErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.InviteGuestError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InviteGuestError",
+                        "printedName": "LatchSDK.InviteGuestError",
+                        "usr": "s:8LatchSDK16InviteGuestErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK16InviteGuestErrorO15userCanNotShareyA2CmF",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO15userCanNotShareyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LatchSDK.InviteGuestError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InviteGuestError",
+                    "printedName": "LatchSDK.InviteGuestError",
+                    "usr": "s:8LatchSDK16InviteGuestErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8LatchSDK16InviteGuestErrorO8rawValueACSgSS_tcfc",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO8rawValueACSgSS_tcfc",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK16InviteGuestErrorO8rawValueSSvp",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO8rawValueSSvp",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK16InviteGuestErrorO8rawValueSSvg",
+                "mangledName": "$s8LatchSDK16InviteGuestErrorO8rawValueSSvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK16InviteGuestErrorO11descriptionSSvp",
+            "mangledName": "$s8LatchSDK16InviteGuestErrorO11descriptionSSvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK16InviteGuestErrorO11descriptionSSvg",
+                "mangledName": "$s8LatchSDK16InviteGuestErrorO11descriptionSSvg",
+                "moduleName": "LatchSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8LatchSDK16InviteGuestErrorO",
+        "mangledName": "$s8LatchSDK16InviteGuestErrorO",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Gemini",
+        "printedName": "Gemini",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Gemini",
+        "printedName": "Gemini",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchCore",
+        "printedName": "LatchCore",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SyncKit",
+        "printedName": "SyncKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchCore",
+        "printedName": "LatchCore",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Analytics",
+        "printedName": "Analytics",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Rudder",
+        "printedName": "Rudder",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RudderStackAnalyticsService",
+        "printedName": "RudderStackAnalyticsService",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Cryptography",
+        "printedName": "Cryptography",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FeatureManager",
+        "printedName": "FeatureManager",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Gemini",
+        "printedName": "Gemini",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchCore",
+        "printedName": "LatchCore",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchNetworking",
+        "printedName": "LatchNetworking",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Persistence",
+        "printedName": "Persistence",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SyncKit",
+        "printedName": "SyncKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RemoteLog",
+        "printedName": "RemoteLog",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UnlockKit",
+        "printedName": "UnlockKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Utilities",
+        "printedName": "Utilities",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UserSegmentation",
+        "printedName": "UserSegmentation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Latch",
+        "printedName": "Latch",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "proximityUnlockHandler",
+            "printedName": "proximityUnlockHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LatchSDK.UnlockStatus) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LatchSDK.UnlockStatus) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockStatus",
+                        "printedName": "LatchSDK.UnlockStatus",
+                        "usr": "s:8LatchSDK12UnlockStatusV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK0A0C22proximityUnlockHandleryAA0D6StatusVcSgvp",
+            "mangledName": "$s8LatchSDK0A0C22proximityUnlockHandleryAA0D6StatusVcSgvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((LatchSDK.UnlockStatus) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(LatchSDK.UnlockStatus) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnlockStatus",
+                            "printedName": "LatchSDK.UnlockStatus",
+                            "usr": "s:8LatchSDK12UnlockStatusV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK0A0C22proximityUnlockHandleryAA0D6StatusVcSgvg",
+                "mangledName": "$s8LatchSDK0A0C22proximityUnlockHandleryAA0D6StatusVcSgvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((LatchSDK.UnlockStatus) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(LatchSDK.UnlockStatus) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnlockStatus",
+                            "printedName": "LatchSDK.UnlockStatus",
+                            "usr": "s:8LatchSDK12UnlockStatusV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK0A0C22proximityUnlockHandleryAA0D6StatusVcSgvs",
+                "mangledName": "$s8LatchSDK0A0C22proximityUnlockHandleryAA0D6StatusVcSgvs",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK0A0C22proximityUnlockHandleryAA0D6StatusVcSgvM",
+                "mangledName": "$s8LatchSDK0A0C22proximityUnlockHandleryAA0D6StatusVcSgvM",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(withToken:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<LatchSDK.Latch, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<LatchSDK.Latch, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Latch",
+                        "printedName": "LatchSDK.Latch",
+                        "usr": "s:8LatchSDK0A0C"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C10initialize9withToken10completionySSSg_ys6ResultOyACs5Error_pGctFZ",
+            "mangledName": "$s8LatchSDK0A0C10initialize9withToken10completionySSSg_ys6ResultOyACs5Error_pGctFZ",
+            "moduleName": "LatchSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(withToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Latch",
+                "printedName": "LatchSDK.Latch",
+                "usr": "s:8LatchSDK0A0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C10initialize9withTokenACSSSg_tYaKFZ",
+            "mangledName": "$s8LatchSDK0A0C10initialize9withTokenACSSSg_tYaKFZ",
+            "moduleName": "LatchSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locks",
+            "printedName": "locks(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([LatchSDK.Lock]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LatchSDK.Lock]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Lock",
+                        "printedName": "LatchSDK.Lock",
+                        "usr": "s:8LatchSDK4LockP"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C5locks10completionyySayAA4Lock_pGc_tF",
+            "mangledName": "$s8LatchSDK0A0C5locks10completionyySayAA4Lock_pGc_tF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locks",
+            "printedName": "locks()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[LatchSDK.Lock]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Lock",
+                    "printedName": "LatchSDK.Lock",
+                    "usr": "s:8LatchSDK4LockP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C5locksSayAA4Lock_pGyYaF",
+            "mangledName": "$s8LatchSDK0A0C5locksSayAA4Lock_pGyYaF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlock",
+            "printedName": "unlock(lockID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C6unlock6lockID10completionySS_ys6ResultOyyts5Error_pGctF",
+            "mangledName": "$s8LatchSDK0A0C6unlock6lockID10completionySS_ys6ResultOyyts5Error_pGctF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlock",
+            "printedName": "unlock(lockID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C6unlock6lockIDySS_tYaKF",
+            "mangledName": "$s8LatchSDK0A0C6unlock6lockIDySS_tYaKF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlock",
+            "printedName": "unlock(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Lock",
+                "printedName": "LatchSDK.Lock",
+                "usr": "s:8LatchSDK4LockP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C6unlock_10completionyAA4Lock_p_ys6ResultOyyts5Error_pGctF",
+            "mangledName": "$s8LatchSDK0A0C6unlock_10completionyAA4Lock_p_ys6ResultOyyts5Error_pGctF",
+            "moduleName": "LatchSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlock",
+            "printedName": "unlock(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Lock",
+                "printedName": "LatchSDK.Lock",
+                "usr": "s:8LatchSDK4LockP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C6unlockyyAA4Lock_pYaKF",
+            "mangledName": "$s8LatchSDK0A0C6unlockyyAA4Lock_pYaKF",
+            "moduleName": "LatchSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startProximityUnlock",
+            "printedName": "startProximityUnlock()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C20startProximityUnlockyyF",
+            "mangledName": "$s8LatchSDK0A0C20startProximityUnlockyyF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopProximityUnlock",
+            "printedName": "stopProximityUnlock()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C19stopProximityUnlockyyF",
+            "mangledName": "$s8LatchSDK0A0C19stopProximityUnlockyyF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(lockID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C4sync6lockID10completionySS_ys6ResultOyyts5Error_pGctF",
+            "mangledName": "$s8LatchSDK0A0C4sync6lockID10completionySS_ys6ResultOyyts5Error_pGctF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(lockID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C4sync6lockIDySS_tYaKF",
+            "mangledName": "$s8LatchSDK0A0C4sync6lockIDySS_tYaKF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inviteGuests",
+            "printedName": "inviteGuests(firstName:lastName:email:phone:startTime:endTime:deviceUUIDs:passcodeType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PasscodeType",
+                "printedName": "LatchSDK.PasscodeType",
+                "usr": "s:8LatchSDK12PasscodeTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<LatchSDK.Guest, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<LatchSDK.Guest, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Guest",
+                        "printedName": "LatchSDK.Guest",
+                        "usr": "s:8LatchSDK5GuestV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C12inviteGuests9firstName04lastF05email5phone9startTime03endK011deviceUUIDs12passcodeType10completionySS_SSSgSSAN10Foundation4DateVAQSgSaySSGAA08PasscodeP0Oys6ResultOyAA5GuestVs5Error_pGctF",
+            "mangledName": "$s8LatchSDK0A0C12inviteGuests9firstName04lastF05email5phone9startTime03endK011deviceUUIDs12passcodeType10completionySS_SSSgSSAN10Foundation4DateVAQSgSaySSGAA08PasscodeP0Oys6ResultOyAA5GuestVs5Error_pGctF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inviteGuests",
+            "printedName": "inviteGuests(firstName:lastName:email:phone:startTime:endTime:deviceUUIDs:passcodeType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Guest",
+                "printedName": "LatchSDK.Guest",
+                "usr": "s:8LatchSDK5GuestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PasscodeType",
+                "printedName": "LatchSDK.PasscodeType",
+                "usr": "s:8LatchSDK12PasscodeTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C12inviteGuests9firstName04lastF05email5phone9startTime03endK011deviceUUIDs12passcodeTypeAA5GuestVSS_SSSgSSAO10Foundation4DateVARSgSaySSGAA08PasscodeP0OtYaKF",
+            "mangledName": "$s8LatchSDK0A0C12inviteGuests9firstName04lastF05email5phone9startTime03endK011deviceUUIDs12passcodeTypeAA5GuestVSS_SSSgSSAO10Foundation4DateVARSgSaySSGAA08PasscodeP0OtYaKF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "guests",
+            "printedName": "guests(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[LatchSDK.Guest], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[LatchSDK.Guest], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[LatchSDK.Guest]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Guest",
+                            "printedName": "LatchSDK.Guest",
+                            "usr": "s:8LatchSDK5GuestV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C6guests10completionyys6ResultOySayAA5GuestVGs5Error_pGc_tF",
+            "mangledName": "$s8LatchSDK0A0C6guests10completionyys6ResultOySayAA5GuestVGs5Error_pGc_tF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "guests",
+            "printedName": "guests()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[LatchSDK.Guest]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Guest",
+                    "printedName": "LatchSDK.Guest",
+                    "usr": "s:8LatchSDK5GuestV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK0A0C6guestsSayAA5GuestVGyYaKF",
+            "mangledName": "$s8LatchSDK0A0C6guestsSayAA5GuestVGyYaKF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8LatchSDK0A0C",
+        "mangledName": "$s8LatchSDK0A0C",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Lock",
+        "printedName": "Lock",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK4LockP2id10Foundation4UUIDVvp",
+            "mangledName": "$s8LatchSDK4LockP2id10Foundation4UUIDVvp",
+            "moduleName": "LatchSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK4LockP2id10Foundation4UUIDVvg",
+                "mangledName": "$s8LatchSDK4LockP2id10Foundation4UUIDVvg",
+                "moduleName": "LatchSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : LatchSDK.Lock>",
+                "sugared_genericSig": "<Self where Self : LatchSDK.Lock>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK4LockP4nameSSvp",
+            "mangledName": "$s8LatchSDK4LockP4nameSSvp",
+            "moduleName": "LatchSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK4LockP4nameSSvg",
+                "mangledName": "$s8LatchSDK4LockP4nameSSvg",
+                "moduleName": "LatchSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : LatchSDK.Lock>",
+                "sugared_genericSig": "<Self where Self : LatchSDK.Lock>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceType",
+            "printedName": "deviceType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceType",
+                "printedName": "LatchSDK.DeviceType",
+                "usr": "s:8LatchSDK10DeviceTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK4LockP10deviceTypeAA06DeviceE0Ovp",
+            "mangledName": "$s8LatchSDK4LockP10deviceTypeAA06DeviceE0Ovp",
+            "moduleName": "LatchSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceType",
+                    "printedName": "LatchSDK.DeviceType",
+                    "usr": "s:8LatchSDK10DeviceTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK4LockP10deviceTypeAA06DeviceE0Ovg",
+                "mangledName": "$s8LatchSDK4LockP10deviceTypeAA06DeviceE0Ovg",
+                "moduleName": "LatchSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : LatchSDK.Lock>",
+                "sugared_genericSig": "<Self where Self : LatchSDK.Lock>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessStartDate",
+            "printedName": "accessStartDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK4LockP15accessStartDate10Foundation0F0Vvp",
+            "mangledName": "$s8LatchSDK4LockP15accessStartDate10Foundation0F0Vvp",
+            "moduleName": "LatchSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK4LockP15accessStartDate10Foundation0F0Vvg",
+                "mangledName": "$s8LatchSDK4LockP15accessStartDate10Foundation0F0Vvg",
+                "moduleName": "LatchSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : LatchSDK.Lock>",
+                "sugared_genericSig": "<Self where Self : LatchSDK.Lock>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessEndDate",
+            "printedName": "accessEndDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK4LockP13accessEndDate10Foundation0F0VSgvp",
+            "mangledName": "$s8LatchSDK4LockP13accessEndDate10Foundation0F0VSgvp",
+            "moduleName": "LatchSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK4LockP13accessEndDate10Foundation0F0VSgvg",
+                "mangledName": "$s8LatchSDK4LockP13accessEndDate10Foundation0F0VSgvg",
+                "moduleName": "LatchSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : LatchSDK.Lock>",
+                "sugared_genericSig": "<Self where Self : LatchSDK.Lock>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8LatchSDK4LockP",
+        "mangledName": "$s8LatchSDK4LockP",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceType",
+        "printedName": "DeviceType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "c",
+            "printedName": "c",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.DeviceType.Type) -> LatchSDK.DeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceType",
+                    "printedName": "LatchSDK.DeviceType",
+                    "usr": "s:8LatchSDK10DeviceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.DeviceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceType",
+                        "printedName": "LatchSDK.DeviceType",
+                        "usr": "s:8LatchSDK10DeviceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK10DeviceTypeO1cyA2CmF",
+            "mangledName": "$s8LatchSDK10DeviceTypeO1cyA2CmF",
+            "moduleName": "LatchSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "g",
+            "printedName": "g",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.DeviceType.Type) -> LatchSDK.DeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceType",
+                    "printedName": "LatchSDK.DeviceType",
+                    "usr": "s:8LatchSDK10DeviceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.DeviceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceType",
+                        "printedName": "LatchSDK.DeviceType",
+                        "usr": "s:8LatchSDK10DeviceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK10DeviceTypeO1gyA2CmF",
+            "mangledName": "$s8LatchSDK10DeviceTypeO1gyA2CmF",
+            "moduleName": "LatchSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "m",
+            "printedName": "m",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.DeviceType.Type) -> LatchSDK.DeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceType",
+                    "printedName": "LatchSDK.DeviceType",
+                    "usr": "s:8LatchSDK10DeviceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.DeviceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceType",
+                        "printedName": "LatchSDK.DeviceType",
+                        "usr": "s:8LatchSDK10DeviceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK10DeviceTypeO1myA2CmF",
+            "mangledName": "$s8LatchSDK10DeviceTypeO1myA2CmF",
+            "moduleName": "LatchSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "r",
+            "printedName": "r",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.DeviceType.Type) -> LatchSDK.DeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceType",
+                    "printedName": "LatchSDK.DeviceType",
+                    "usr": "s:8LatchSDK10DeviceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.DeviceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceType",
+                        "printedName": "LatchSDK.DeviceType",
+                        "usr": "s:8LatchSDK10DeviceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK10DeviceTypeO1ryA2CmF",
+            "mangledName": "$s8LatchSDK10DeviceTypeO1ryA2CmF",
+            "moduleName": "LatchSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LatchSDK.DeviceType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceType",
+                    "printedName": "LatchSDK.DeviceType",
+                    "usr": "s:8LatchSDK10DeviceTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8LatchSDK10DeviceTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s8LatchSDK10DeviceTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK10DeviceTypeO8rawValueSSvp",
+            "mangledName": "$s8LatchSDK10DeviceTypeO8rawValueSSvp",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK10DeviceTypeO8rawValueSSvg",
+                "mangledName": "$s8LatchSDK10DeviceTypeO8rawValueSSvg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8LatchSDK10DeviceTypeO",
+        "mangledName": "$s8LatchSDK10DeviceTypeO",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Gemini",
+        "printedName": "Gemini",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnlockError",
+        "printedName": "UnlockError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bluetoothDisabled",
+            "printedName": "bluetoothDisabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.UnlockError.Type) -> LatchSDK.UnlockError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockError",
+                    "printedName": "LatchSDK.UnlockError",
+                    "usr": "s:8LatchSDK11UnlockErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.UnlockError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockError",
+                        "printedName": "LatchSDK.UnlockError",
+                        "usr": "s:8LatchSDK11UnlockErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK11UnlockErrorO17bluetoothDisabledyA2CmF",
+            "mangledName": "$s8LatchSDK11UnlockErrorO17bluetoothDisabledyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothPermissionDenied",
+            "printedName": "bluetoothPermissionDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.UnlockError.Type) -> LatchSDK.UnlockError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockError",
+                    "printedName": "LatchSDK.UnlockError",
+                    "usr": "s:8LatchSDK11UnlockErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.UnlockError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockError",
+                        "printedName": "LatchSDK.UnlockError",
+                        "usr": "s:8LatchSDK11UnlockErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK11UnlockErrorO25bluetoothPermissionDeniedyA2CmF",
+            "mangledName": "$s8LatchSDK11UnlockErrorO25bluetoothPermissionDeniedyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "concurrentUnlockInProgress",
+            "printedName": "concurrentUnlockInProgress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.UnlockError.Type) -> LatchSDK.UnlockError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockError",
+                    "printedName": "LatchSDK.UnlockError",
+                    "usr": "s:8LatchSDK11UnlockErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.UnlockError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockError",
+                        "printedName": "LatchSDK.UnlockError",
+                        "usr": "s:8LatchSDK11UnlockErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK11UnlockErrorO010concurrentC10InProgressyA2CmF",
+            "mangledName": "$s8LatchSDK11UnlockErrorO010concurrentC10InProgressyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lockNotFound",
+            "printedName": "lockNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.UnlockError.Type) -> (Swift.String) -> LatchSDK.UnlockError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> LatchSDK.UnlockError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockError",
+                        "printedName": "LatchSDK.UnlockError",
+                        "usr": "s:8LatchSDK11UnlockErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.UnlockError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockError",
+                        "printedName": "LatchSDK.UnlockError",
+                        "usr": "s:8LatchSDK11UnlockErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK11UnlockErrorO12lockNotFoundyACSScACmF",
+            "mangledName": "$s8LatchSDK11UnlockErrorO12lockNotFoundyACSScACmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "outOfSchedule",
+            "printedName": "outOfSchedule",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.UnlockError.Type) -> LatchSDK.UnlockError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockError",
+                    "printedName": "LatchSDK.UnlockError",
+                    "usr": "s:8LatchSDK11UnlockErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.UnlockError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockError",
+                        "printedName": "LatchSDK.UnlockError",
+                        "usr": "s:8LatchSDK11UnlockErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK11UnlockErrorO13outOfScheduleyA2CmF",
+            "mangledName": "$s8LatchSDK11UnlockErrorO13outOfScheduleyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.UnlockError.Type) -> LatchSDK.UnlockError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockError",
+                    "printedName": "LatchSDK.UnlockError",
+                    "usr": "s:8LatchSDK11UnlockErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.UnlockError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockError",
+                        "printedName": "LatchSDK.UnlockError",
+                        "usr": "s:8LatchSDK11UnlockErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK11UnlockErrorO7timeoutyA2CmF",
+            "mangledName": "$s8LatchSDK11UnlockErrorO7timeoutyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "internalError",
+            "printedName": "internalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.UnlockError.Type) -> LatchSDK.UnlockError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockError",
+                    "printedName": "LatchSDK.UnlockError",
+                    "usr": "s:8LatchSDK11UnlockErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.UnlockError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockError",
+                        "printedName": "LatchSDK.UnlockError",
+                        "usr": "s:8LatchSDK11UnlockErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK11UnlockErrorO08internalD0yA2CmF",
+            "mangledName": "$s8LatchSDK11UnlockErrorO08internalD0yA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK11UnlockErrorO11descriptionSSvp",
+            "mangledName": "$s8LatchSDK11UnlockErrorO11descriptionSSvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK11UnlockErrorO11descriptionSSvg",
+                "mangledName": "$s8LatchSDK11UnlockErrorO11descriptionSSvg",
+                "moduleName": "LatchSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8LatchSDK11UnlockErrorO",
+        "mangledName": "$s8LatchSDK11UnlockErrorO",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Gemini",
+        "printedName": "Gemini",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchCore",
+        "printedName": "LatchCore",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchNetworking",
+        "printedName": "LatchNetworking",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConsentError",
+        "printedName": "ConsentError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userConsentDenied",
+            "printedName": "userConsentDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.ConsentError.Type) -> LatchSDK.ConsentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentError",
+                    "printedName": "LatchSDK.ConsentError",
+                    "usr": "s:8LatchSDK12ConsentErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.ConsentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConsentError",
+                        "printedName": "LatchSDK.ConsentError",
+                        "usr": "s:8LatchSDK12ConsentErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK12ConsentErrorO04userC6DeniedyA2CmF",
+            "mangledName": "$s8LatchSDK12ConsentErrorO04userC6DeniedyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConsentError",
+                "printedName": "LatchSDK.ConsentError",
+                "usr": "s:8LatchSDK12ConsentErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConsentError",
+                "printedName": "LatchSDK.ConsentError",
+                "usr": "s:8LatchSDK12ConsentErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK12ConsentErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8LatchSDK12ConsentErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "LatchSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK12ConsentErrorO9hashValueSivp",
+            "mangledName": "$s8LatchSDK12ConsentErrorO9hashValueSivp",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK12ConsentErrorO9hashValueSivg",
+                "mangledName": "$s8LatchSDK12ConsentErrorO9hashValueSivg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK12ConsentErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8LatchSDK12ConsentErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK12ConsentErrorO11descriptionSSvp",
+            "mangledName": "$s8LatchSDK12ConsentErrorO11descriptionSSvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK12ConsentErrorO11descriptionSSvg",
+                "mangledName": "$s8LatchSDK12ConsentErrorO11descriptionSSvg",
+                "moduleName": "LatchSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8LatchSDK12ConsentErrorO",
+        "mangledName": "$s8LatchSDK12ConsentErrorO",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchCore",
+        "printedName": "LatchCore",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Utilities",
+        "printedName": "Utilities",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchBluetooth",
+        "printedName": "LatchBluetooth",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchCore",
+        "printedName": "LatchCore",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SyncKit",
+        "printedName": "SyncKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UnlockKit",
+        "printedName": "UnlockKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Utilities",
+        "printedName": "Utilities",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKitExtensions",
+        "printedName": "UIKitExtensions",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchCore",
+        "printedName": "LatchCore",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Persistence",
+        "printedName": "Persistence",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SyncKit",
+        "printedName": "SyncKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Gemini",
+        "printedName": "Gemini",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LatchCore",
+        "printedName": "LatchCore",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SyncKit",
+        "printedName": "SyncKit",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidToken",
+            "printedName": "invalidToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.NetworkError.Type) -> LatchSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "LatchSDK.NetworkError",
+                    "usr": "s:8LatchSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "LatchSDK.NetworkError",
+                        "usr": "s:8LatchSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK12NetworkErrorO12invalidTokenyA2CmF",
+            "mangledName": "$s8LatchSDK12NetworkErrorO12invalidTokenyA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "internalError",
+            "printedName": "internalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LatchSDK.NetworkError.Type) -> LatchSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "LatchSDK.NetworkError",
+                    "usr": "s:8LatchSDK12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LatchSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "LatchSDK.NetworkError",
+                        "usr": "s:8LatchSDK12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8LatchSDK12NetworkErrorO08internalD0yA2CmF",
+            "mangledName": "$s8LatchSDK12NetworkErrorO08internalD0yA2CmF",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK12NetworkErrorO9hashValueSivp",
+            "mangledName": "$s8LatchSDK12NetworkErrorO9hashValueSivp",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK12NetworkErrorO9hashValueSivg",
+                "mangledName": "$s8LatchSDK12NetworkErrorO9hashValueSivg",
+                "moduleName": "LatchSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK12NetworkErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8LatchSDK12NetworkErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "LatchSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "LatchSDK.NetworkError",
+                "usr": "s:8LatchSDK12NetworkErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "LatchSDK.NetworkError",
+                "usr": "s:8LatchSDK12NetworkErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8LatchSDK12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8LatchSDK12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "LatchSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8LatchSDK12NetworkErrorO11descriptionSSvp",
+            "mangledName": "$s8LatchSDK12NetworkErrorO11descriptionSSvp",
+            "moduleName": "LatchSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8LatchSDK12NetworkErrorO11descriptionSSvg",
+                "mangledName": "$s8LatchSDK12NetworkErrorO11descriptionSSvg",
+                "moduleName": "LatchSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8LatchSDK12NetworkErrorO",
+        "mangledName": "$s8LatchSDK12NetworkErrorO",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Gemini",
+        "printedName": "Gemini",
+        "declKind": "Import",
+        "moduleName": "LatchSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockStatus.swift",
+      "kind": "BooleanLiteral",
+      "offset": 520,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockStatus.swift",
+      "kind": "BooleanLiteral",
+      "offset": 569,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1122,
+      "length": 30,
+      "value": "\"EMAIL_REQUIRED_FOR_PERMANENT\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1249,
+      "length": 25,
+      "value": "\"EMAIL_OR_PHONE_REQUIRED\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1379,
+      "length": 26,
+      "value": "\"EMAIL_AND_PHONE_PROVIDED\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1470,
+      "length": 15,
+      "value": "\"INVALID_PHONE\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1586,
+      "length": 20,
+      "value": "\"INVALID_START_TIME\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1713,
+      "length": 24,
+      "value": "\"END_TIME_NOT_SUPPORTED\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1838,
+      "length": 20,
+      "value": "\"USER_CAN_NOT_SHARE\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1122,
+      "length": 30,
+      "value": "\"EMAIL_REQUIRED_FOR_PERMANENT\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1249,
+      "length": 25,
+      "value": "\"EMAIL_OR_PHONE_REQUIRED\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1379,
+      "length": 26,
+      "value": "\"EMAIL_AND_PHONE_PROVIDED\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1470,
+      "length": 15,
+      "value": "\"INVALID_PHONE\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1586,
+      "length": 20,
+      "value": "\"INVALID_START_TIME\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1713,
+      "length": 24,
+      "value": "\"END_TIME_NOT_SUPPORTED\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 1838,
+      "length": 20,
+      "value": "\"USER_CAN_NOT_SHARE\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 2025,
+      "length": 46,
+      "value": "\"An email is required for the permanent guest\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 2127,
+      "length": 55,
+      "value": "\"An email or phone is required for the temporary guest\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 2230,
+      "length": 31,
+      "value": "\"An invalid phone was provided\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 2313,
+      "length": 63,
+      "value": "\"The start time is either in the past or too far in the future\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 2431,
+      "length": 66,
+      "value": "\"The end time is prior to the start time or too far in the future\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 2554,
+      "length": 62,
+      "value": "\"Both an email and phone was provided for the temporary guest\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Guest\/Guest.swift",
+      "kind": "StringLiteral",
+      "offset": 2667,
+      "length": 64,
+      "value": "\"The user does not have sharable access to the devices provided\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceLockAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 948,
+      "length": 51,
+      "value": "\"Unknown device type. Returning '\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceLockAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 996,
+      "length": 4,
+      "value": "\"'.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2557,
+      "length": 7,
+      "value": "\"Latch\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3403,
+      "length": 15,
+      "value": "\"Authorization\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3422,
+      "length": 17,
+      "value": "\"Bearer \""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3438,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7333,
+      "length": 41,
+      "value": "\"LatchSDK failed to initialize: \""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7373,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8160,
+      "length": 26,
+      "value": "\"Restore current session.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8324,
+      "length": 36,
+      "value": "\"Current session is nil or expired.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9082,
+      "length": 3,
+      "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9099,
+      "length": 3,
+      "value": "\"G\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9116,
+      "length": 3,
+      "value": "\"M\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9133,
+      "length": 3,
+      "value": "\"R\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9082,
+      "length": 3,
+      "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9099,
+      "length": 3,
+      "value": "\"G\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9116,
+      "length": 3,
+      "value": "\"M\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9133,
+      "length": 3,
+      "value": "\"R\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 10704,
+      "length": 65,
+      "value": "\"Unable to perform unlock while proximity unlock is in progress.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 11179,
+      "length": 40,
+      "value": "\"Failed to Unlock '\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 11207,
+      "length": 13,
+      "value": "\"': \""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 11218,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 12475,
+      "length": 68,
+      "value": "\"Unable to start proximity unlock because it's already in progress.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 14375,
+      "length": 42,
+      "value": "\"Sync completed successfully -- \""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 14416,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 14458,
+      "length": 38,
+      "value": "\"Failed to sync '\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 14484,
+      "length": 13,
+      "value": "\"': \""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/LatchSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 14495,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockError.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 53,
+      "value": "\"The current device does not have Bluetooth enabled.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockError.swift",
+      "kind": "StringLiteral",
+      "offset": 1093,
+      "length": 61,
+      "value": "\"User denied Latch SDK access to use the device's Bluetooth.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockError.swift",
+      "kind": "StringLiteral",
+      "offset": 1216,
+      "length": 49,
+      "value": "\"Only one unlock operation is allowed at a time.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockError.swift",
+      "kind": "StringLiteral",
+      "offset": 1325,
+      "length": 72,
+      "value": "\"Failed to find a lock with a unique identifier matching \"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockError.swift",
+      "kind": "StringLiteral",
+      "offset": 1393,
+      "length": 1,
+      "value": "\"\".\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockError.swift",
+      "kind": "StringLiteral",
+      "offset": 1446,
+      "length": 52,
+      "value": "\"Access attempted outside of device access schedule\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockError.swift",
+      "kind": "StringLiteral",
+      "offset": 1541,
+      "length": 59,
+      "value": "\"Unlock failed to complete in a reasonable amount of time.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/UnlockError.swift",
+      "kind": "StringLiteral",
+      "offset": 1649,
+      "length": 30,
+      "value": "\"An unexpected error occured.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/SyncService.swift",
+      "kind": "StringLiteral",
+      "offset": 1841,
+      "length": 27,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/SyncService.swift",
+      "kind": "StringLiteral",
+      "offset": 1849,
+      "length": 2,
+      "value": "\" is not supported.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentError.swift",
+      "kind": "StringLiteral",
+      "offset": 440,
+      "length": 70,
+      "value": "\"The current user hasn't granted the app access to use the Latch SDK.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Extensions\/GroupKeychainExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 13,
+      "value": "\"UserSession\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentResponse.swift",
+      "kind": "BooleanLiteral",
+      "offset": 381,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentResponse.swift",
+      "kind": "BooleanLiteral",
+      "offset": 422,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 812,
+      "length": 18,
+      "value": "\"Terms of Service\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 879,
+      "length": 16,
+      "value": "\"Privacy Policy\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 939,
+      "length": 10,
+      "value": "\"Disagree\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 990,
+      "length": 7,
+      "value": "\"Agree\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentController.swift",
+      "kind": "StringLiteral",
+      "offset": 1009,
+      "length": 40,
+      "value": "\"https:\/\/www.latch.com\/terms-of-service\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/ConsentController.swift",
+      "kind": "StringLiteral",
+      "offset": 1093,
+      "length": 38,
+      "value": "\"https:\/\/www.latch.com\/privacy-policy\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SDKConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 51,
+      "value": "\"https:\/\/api-sandbox.latchaccess.com\/access\/sdk\/v1\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SDKConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 48,
+      "value": "\"https:\/\/rest.dev.latchaccess.com\/access\/sdk\/v1\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SDKConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 47,
+      "value": "\"https:\/\/rest.qa.latchaccess.com\/access\/sdk\/v1\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SDKConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 578,
+      "length": 52,
+      "value": "\"https:\/\/rest.staging.latchaccess.com\/access\/sdk\/v1\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SDKConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 664,
+      "length": 44,
+      "value": "\"https:\/\/rest.latchaccess.com\/access\/sdk\/v1\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 908,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1757,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3277,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4867,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceController.swift",
+      "kind": "Dictionary",
+      "offset": 5639,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceController.swift",
+      "kind": "Dictionary",
+      "offset": 5820,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7731,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/DeviceController.swift",
+      "kind": "Array",
+      "offset": 7911,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/UIKit\/UIAlertConsentController.swift",
+      "kind": "StringLiteral",
+      "offset": 727,
+      "length": 74,
+      "value": "\"By proceeding, I agree to Latch’s Terms of Service and Privacy Policy.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/UIKit\/UIAlertConsentController.swift",
+      "kind": "StringLiteral",
+      "offset": 824,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/UIKit\/UIAlertConsentController.swift",
+      "kind": "StringLiteral",
+      "offset": 930,
+      "length": 11,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/UIKit\/UIAlertConsentController.swift",
+      "kind": "StringLiteral",
+      "offset": 940,
+      "length": 26,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/UIKit\/UIAlertConsentController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1301,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Core\/UserSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 382,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SyncKit\/CompletedUplinks.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 31,
+      "value": "\"deviceUUID == '\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SyncKit\/CompletedUplinks.swift",
+      "kind": "StringLiteral",
+      "offset": 700,
+      "length": 3,
+      "value": "\"'\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SyncKit\/CompletedUplinks.swift",
+      "kind": "StringLiteral",
+      "offset": 1683,
+      "length": 22,
+      "value": "\"Uplink packets saved\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SyncKit\/CompletedUplinks.swift",
+      "kind": "StringLiteral",
+      "offset": 2298,
+      "length": 63,
+      "value": "\"Failed to delete uplink packet: \""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SyncKit\/CompletedUplinks.swift",
+      "kind": "StringLiteral",
+      "offset": 2360,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/SyncKit\/CompletedUplinks.swift",
+      "kind": "StringLiteral",
+      "offset": 2446,
+      "length": 24,
+      "value": "\"Uplink packets deleted\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/GeminiDeviceService.swift",
+      "kind": "StringLiteral",
+      "offset": 2429,
+      "length": 10,
+      "value": "\"\/devices\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/GeminiDeviceService.swift",
+      "kind": "StringLiteral",
+      "offset": 2685,
+      "length": 5,
+      "value": "\"+\/=\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/GeminiDeviceService.swift",
+      "kind": "StringLiteral",
+      "offset": 2890,
+      "length": 12,
+      "value": "\"public_key\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/GeminiDeviceService.swift",
+      "kind": "Dictionary",
+      "offset": 3054,
+      "length": 25,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/GeminiDeviceService.swift",
+      "kind": "StringLiteral",
+      "offset": 3375,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Device\/GeminiDeviceService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3558,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Networking\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 525,
+      "length": 70,
+      "value": "\"The supplied authorization token is invalid and should be refreshed.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Networking\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 644,
+      "length": 30,
+      "value": "\"An unexpected error occured.\""
+    },
+    {
+      "filePath": "\/Users\/duff.neubauer\/Developer\/mobile-ios\/LatchSDK\/Authentication\/Gemini\/GeminiAPIError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
+      "length": 3,
+      "value": "401"
+    }
+  ]
+}

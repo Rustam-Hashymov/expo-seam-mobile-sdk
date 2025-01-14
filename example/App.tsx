@@ -1,73 +1,63 @@
-import { useEvent } from 'expo';
-import ExpoSeamMobileSdk, { ExpoSeamMobileSdkView } from 'expo-seam-mobile-sdk';
-import { Button, SafeAreaView, ScrollView, Text, View } from 'react-native';
+import ExpoSeamMobileSdk from 'expo-seam-mobile-sdk';
+import React, { useEffect, useState } from 'react';
+import { SafeAreaView, ScrollView, Text, View, StyleSheet } from 'react-native';
 
 export default function App() {
-  const onChangePayload = useEvent(ExpoSeamMobileSdk, 'onChange');
+  const [result, setResult] = useState<any>(null);
+
+  useEffect(() => {
+    async function initializeSeamSDK() {
+      try {
+        const initResponse = await ExpoSeamMobileSdk.initializeSeam('seam_cst1xHF1qfvm_AjP71gjjTAUcDw1unxpZ4Msh', "bbd4d0ac-cc2c-4197-a670-6b3256b9bdc8");
+        console.log('Seam SDK Initialized:', initResponse);
+        setResult(initResponse);
+      } catch (error) {
+        console.error('Error initializing Seam SDK:', error);
+      }
+    }
+
+    initializeSeamSDK();
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.container}>
-        <Text style={styles.header}>Module API Example</Text>
-        <Group name="Constants">
-          <Text>{ExpoSeamMobileSdk.PI}</Text>
-        </Group>
-        <Group name="Functions">
-          <Text>{ExpoSeamMobileSdk.hello()}</Text>
-        </Group>
-        <Group name="Async functions">
-          <Button
-            title="Set value"
-            onPress={async () => {
-              await ExpoSeamMobileSdk.setValueAsync('Hello from JS!');
-            }}
-          />
-        </Group>
-        <Group name="Events">
-          <Text>{onChangePayload?.value}</Text>
-        </Group>
-        <Group name="Views">
-          <ExpoSeamMobileSdkView
-            url="https://www.example.com"
-            onLoad={({ nativeEvent: { url } }) => console.log(`Loaded: ${url}`)}
-            style={styles.view}
-          />
-        </Group>
+      <ScrollView>
+        <Text style={styles.header}>SeamSDK Integration</Text>
+        <View style={styles.group}>
+          <Text style={styles.groupHeader}>Initialize result</Text>
+          {result ? (
+            <Text>Seam SDK initialized successfully</Text>
+          ) : (
+            <Text>Seam SDK is not initialized</Text>
+          )}
+        </View>
+        <View style={styles.group}>
+          <Text style={styles.groupHeader}>Method Result</Text>
+          <Text>{JSON.stringify(result, null, 2)}</Text>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
 }
 
-function Group(props: { name: string; children: React.ReactNode }) {
-  return (
-    <View style={styles.group}>
-      <Text style={styles.groupHeader}>{props.name}</Text>
-      {props.children}
-    </View>
-  );
-}
-
-const styles = {
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   header: {
-    fontSize: 30,
-    margin: 20,
+    fontSize: 24,
+    marginBottom: 20,
   },
   groupHeader: {
     fontSize: 20,
-    marginBottom: 20,
+    marginBottom: 10,
   },
   group: {
-    margin: 20,
-    backgroundColor: '#fff',
-    borderRadius: 10,
+    marginVertical: 20,
     padding: 20,
+    backgroundColor: '#fff',
+    borderRadius: 8,
   },
-  container: {
-    flex: 1,
-    backgroundColor: '#eee',
-  },
-  view: {
-    flex: 1,
-    height: 200,
-  },
-};
+});

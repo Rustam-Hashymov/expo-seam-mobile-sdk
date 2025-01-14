@@ -11,16 +11,19 @@ Pod::Spec.new do |s|
   s.author         = package['author']
   s.homepage       = package['homepage']
   s.platforms      = {
-    :ios => '15.1',
-    :tvos => '15.1'
+    :ios => '15.0',
+    :tvos => '15.0'
   }
-  s.swift_version  = '5.4'
+  s.swift_version  = '5.10'
   s.source         = { git: 'https://github.com/Rustam-Hashymov/seam-mobile-sdk' }
-  s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
+  s.dependency 'SeamSDK'
+#   s.exclude_files = '**/*-Swift.h'
+  s.static_framework = true
 
-  # Swift/Objective-C compatibility
+  s.ios.deployment_target = '15.1'
+
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
   }
