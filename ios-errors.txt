@@ -1,0 +1,204 @@
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:394:1)
+
+  392 |
+  393 | SWIFT_CLASS("_TtC17SeosMobileKeysSDK9RealClock")
+> 394 | @interface RealClock : NSObject <Clock>
+      | ^ duplicate interface definition for class 'RealClock'
+  395 | - (NSTimeInterval)currentTimeIntervalSince1970 SWIFT_WARN_UNUSED_RESULT;
+  396 | - (NSDate * _Nonnull)now SWIFT_WARN_UNUSED_RESULT;
+  397 | - (NSDate * _Nonnull)futureWithTime:(NSTimeInterval)time SWIFT_WARN_UNUSED_RESULT;
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:404:1)
+
+  402 |
+  403 | SWIFT_CLASS("_TtC17SeosMobileKeysSDK9FakeClock")
+> 404 | @interface FakeClock : RealClock
+      | ^ duplicate interface definition for class 'FakeClock'
+  405 | - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+  406 | - (NSTimeInterval)currentTimeIntervalSince1970 SWIFT_WARN_UNUSED_RESULT;
+  407 | - (NSDate * _Nonnull)now SWIFT_WARN_UNUSED_RESULT;
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:417:1)
+
+  415 | /// Class responsible for analytics authentication and URL configurations
+  416 | SWIFT_CLASS("_TtC17SeosMobileKeysSDK15IHAnalyticsUtil")
+> 417 | @interface IHAnalyticsUtil : NSObject
+      | ^ duplicate interface definition for class 'IHAnalyticsUtil'
+  418 | @property (nonatomic, readonly, strong) AnalyticsAPI * _Nonnull analyticsAPI;
+  419 | @property (nonatomic, strong) Personalized * _Nullable personalized;
+  420 | @property (nonatomic, strong) PersonalizationFailure * _Nullable personalizationFailure;
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:418:65)
+
+  416 | SWIFT_CLASS("_TtC17SeosMobileKeysSDK15IHAnalyticsUtil")
+  417 | @interface IHAnalyticsUtil : NSObject
+> 418 | @property (nonatomic, readonly, strong) AnalyticsAPI * _Nonnull analyticsAPI;
+      |                                                                 ^ property has a previous declaration
+  419 | @property (nonatomic, strong) Personalized * _Nullable personalized;
+  420 | @property (nonatomic, strong) PersonalizationFailure * _Nullable personalizationFailure;
+  421 | /// Authentication base URL
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:419:56)
+
+  417 | @interface IHAnalyticsUtil : NSObject
+  418 | @property (nonatomic, readonly, strong) AnalyticsAPI * _Nonnull analyticsAPI;
+> 419 | @property (nonatomic, strong) Personalized * _Nullable personalized;
+      |                                                        ^ property has a previous declaration
+  420 | @property (nonatomic, strong) PersonalizationFailure * _Nullable personalizationFailure;
+  421 | /// Authentication base URL
+  422 | /// Ensure <code>personalized</code> / <code>personalizationFailure</code> set before setting this property
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:420:66)
+
+  418 | @property (nonatomic, readonly, strong) AnalyticsAPI * _Nonnull analyticsAPI;
+  419 | @property (nonatomic, strong) Personalized * _Nullable personalized;
+> 420 | @property (nonatomic, strong) PersonalizationFailure * _Nullable personalizationFailure;
+      |                                                                  ^ property has a previous declaration
+  421 | /// Authentication base URL
+  422 | /// Ensure <code>personalized</code> / <code>personalizationFailure</code> set before setting this property
+  423 | @property (nonatomic, copy) NSURL * _Nullable baseAuthURL;
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:423:47)
+
+  421 | /// Authentication base URL
+  422 | /// Ensure <code>personalized</code> / <code>personalizationFailure</code> set before setting this property
+> 423 | @property (nonatomic, copy) NSURL * _Nullable baseAuthURL;
+      |                                               ^ property has a previous declaration
+  424 | @property (nonatomic, copy) NSURL * _Nullable baseURL;
+  425 | - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+  426 | /// Method dedicated for endpoint unregister
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:424:47)
+
+  422 | /// Ensure <code>personalized</code> / <code>personalizationFailure</code> set before setting this property
+  423 | @property (nonatomic, copy) NSURL * _Nullable baseAuthURL;
+> 424 | @property (nonatomic, copy) NSURL * _Nullable baseURL;
+      |                                               ^ property has a previous declaration
+  425 | - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+  426 | /// Method dedicated for endpoint unregister
+  427 | - (void)sendPersonalizedEventsImmediately;
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:435:1)
+
+  433 |
+  434 | SWIFT_CLASS("_TtC17SeosMobileKeysSDK23LegacyReaderModuleState")
+> 435 | @interface LegacyReaderModuleState : NSObject
+      | ^ duplicate interface definition for class 'LegacyReaderModuleState'
+  436 | @property (nonatomic) enum State state;
+  437 | - (nonnull instancetype)initWithDelegate:(id <LegacyStateMachineDelegateProtocol> _Nonnull)delegate initialState:(enum State)initialState readerModuleType:(enum ReaderModuleType)readerModuleType queue:(dispatch_queue_t _Nonnull)queue OBJC_DESIGNATED_INITIALIZER;
+  438 | - (BOOL)allowTransitionTo:(enum State)to from:(enum State)from SWIFT_WARN_UNUSED_RESULT;
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:436:34)
+
+  434 | SWIFT_CLASS("_TtC17SeosMobileKeysSDK23LegacyReaderModuleState")
+  435 | @interface LegacyReaderModuleState : NSObject
+> 436 | @property (nonatomic) enum State state;
+      |                                  ^ property has a previous declaration
+  437 | - (nonnull instancetype)initWithDelegate:(id <LegacyStateMachineDelegateProtocol> _Nonnull)delegate initialState:(enum State)initialState readerModuleType:(enum ReaderModuleType)readerModuleType queue:(dispatch_queue_t _Nonnull)queue OBJC_DESIGNATED_INITIALIZER;
+  438 | - (BOOL)allowTransitionTo:(enum State)to from:(enum State)from SWIFT_WARN_UNUSED_RESULT;
+  439 | - (void)didTransitionTo:(enum State)to from:(enum State)from;
+
+
+❌  (../ios/libs/Mobile_Keys_iOS_SDK/Release/SeosMobileKeysSDK.xcframework/ios-arm64/SeosMobileKeysSDK.framework/Headers/SeosMobileKeysSDK-Swift.h:315:1)
+
+  313 |
+  314 | SWIFT_CLASS("_TtC17SeosMobileKeysSDK12AnalyticsAPI")
+> 315 | @interface AnalyticsAPI : NSObject
+      | ^ duplicate interface definition for class 'AnalyticsAPI'
+  316 | /// Initializes an instance of the API with the given app name.
+  317 | /// Returns a new Analytics instance API object. This allows you to create more than one instance
+  318 | /// of the API object, which is convenient if you’d like to send data to more than
+
+❌  (../ios/libs/Dormakaba_Legic/LegicMobileSdk.xcframework/ios-arm64/LegicMobileSdk.framework/Headers/LegicMobileSdkReaderFoundReport.h:14:1)
+
+  12 |  */
+  13 | NS_SWIFT_NAME(ReaderFoundReport)
+> 14 | @interface LegicMobileSdkReaderFoundReport : NSObject
+     | ^ duplicate interface definition for class 'LegicMobileSdkReaderFoundReport'
+  15 |
+  16 | //-----------------------------------------------------------------------------|
+  17 | /**
+
+
+❌  (../ios/libs/Dormakaba_Legic/LegicMobileSdk.xcframework/ios-arm64/LegicMobileSdk.framework/Headers/LegicMobileSdkStatus.h:10:1)
+
+   8 |  */
+   9 | NS_SWIFT_NAME(SdkStatus)
+> 10 | @interface LegicMobileSdkStatus : NSObject
+     | ^ duplicate interface definition for class 'LegicMobileSdkStatus'
+  11 |
+  12 | //-----------------------------------------------------------------------------|
+  13 |
+
+❌  (../ios/libs/Dormakaba_Legic/LegicMobileSdk.xcframework/ios-arm64/LegicMobileSdk.framework/Headers/LegicMobileSdkNeonFileMetaValue.h:10:1)
+
+   8 |  */
+   9 | NS_SWIFT_NAME(NeonFileMetaValue)
+> 10 | @interface LegicMobileSdkNeonFileMetaValue : NSObject
+     | ^ duplicate interface definition for class 'LegicMobileSdkNeonFileMetaValue'
+  11 |
+  12 | /**
+  13 |  * Returns the type of the metadata.
+
+
+❌  (../ios/libs/Dormakaba_Legic/LegicMobileSdk.xcframework/ios-arm64/LegicMobileSdk.framework/Headers/LegicMobileSdkNeonFileParameter.h:10:1)
+
+   8 |  */
+   9 | NS_SWIFT_NAME(NeonFileParameter)
+> 10 | @interface LegicMobileSdkNeonFileParameter : NSObject
+     | ^ duplicate interface definition for class 'LegicMobileSdkNeonFileParameter'
+  11 |
+  12 | //-----------------------------------------------------------------------------|
+  13 | - (instancetype _Nonnull)initWithKey:(NSString* _Nonnull const)key
+
+
+❌  (../ios/libs/Dormakaba_Legic/LegicMobileSdk.xcframework/ios-arm64/LegicMobileSdk.framework/Headers/LegicMobileSdkNeonSubFile.h:11:1)
+
+   9 |  */
+  10 | NS_SWIFT_NAME(NeonSubFile)
+> 11 | @interface LegicMobileSdkNeonSubFile : NSObject
+     | ^ duplicate interface definition for class 'LegicMobileSdkNeonSubFile'
+  12 |
+  13 | /**
+  14 |  * Returns the neon file ID of the current subfile.
+
+❌  (../ios/libs/Dormakaba_Legic/LegicMobileSdk.xcframework/ios-arm64/LegicMobileSdk.framework/Headers/LegicMobileSdkManagerFactory.h:7:1)
+
+   5 |
+   6 | NS_SWIFT_NAME(LegicMobileSdkManagerFactory)
+>  7 | @interface LegicMobileSdkManagerFactory : NSObject
+     | ^ duplicate interface definition for class 'LegicMobileSdkManagerFactory'
+   8 |
+   9 | /**
+  10 |  * Factory function that returns a reference to an LegicMobileSdkManager singleton.
+
+
+❌  (../ios/libs/Dormakaba_Legic/LegicMobileSdk.xcframework/ios-arm64/LegicMobileSdk.framework/Headers/LegicMobileSdkNeonFile.h:16:1)
+
+  14 |  */
+  15 | NS_SWIFT_NAME(NeonFile)
+> 16 | @interface LegicMobileSdkNeonFile : NSObject
+     | ^ duplicate interface definition for class 'LegicMobileSdkNeonFile'
+  17 |
+  18 | //-----------------------------------------------------------------------------|
+  19 |
+
+❌  (../ios/libs/Dormakaba_Legic/LegicMobileSdk.xcframework/ios-arm64/LegicMobileSdk.framework/Headers/LegicMobileSdkManager.h:14:1)
+
+  12 |  */
+  13 | NS_SWIFT_NAME(LegicMobileSdkManager)
+> 14 | @interface LegicMobileSdkManager : NSObject
+     | ^ duplicate interface definition for class 'LegicMobileSdkManager'
+  15 |
+  16 | /**
+  17 |  * Returns if the SDK is already started or not.
+
