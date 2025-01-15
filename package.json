@@ -19,7 +19,7 @@
     "react-native",
     "expo",
     "expo-seam-mobile-sdk",
-    "ExpoSeamMobileSdk"
+    "seam"
   ],
   "repository": "https://github.com/Rustam-Hashymov/seam-mobile-sdk",
   "bugs": {
